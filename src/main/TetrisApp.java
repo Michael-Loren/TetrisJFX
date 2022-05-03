@@ -16,9 +16,7 @@ import java.util.List;
 import java.util.Random;
 import java.util.function.Consumer;
 
-/**
- * @author Almas Baimagambetov (almaslvl@gmail.com)
- */
+
 public class TetrisApp extends Application {
 
     public static final int TILE_SIZE = 40;
