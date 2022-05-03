@@ -20,7 +20,7 @@ import java.util.function.Consumer;
 public class TetrisApp extends Application {
 
     public static final int TILE_SIZE = 40;
-    public static final int GRID_WIDTH = 15;
+    public static final int GRID_WIDTH = 10;
     public static final int GRID_HEIGHT = 20;
 
     private double time;
@@ -111,7 +111,7 @@ public class TetrisApp extends Application {
 
     private void makeMove(Consumer<Tetromino> onSuccess, Consumer<Tetromino> onFail, boolean endMove) {
         selected.pieces.forEach(this::removePiece);
-
+        
         onSuccess.accept(selected);
 
         boolean offscreen = selected.pieces.stream().anyMatch(this::isOffscreen);
@@ -219,17 +219,26 @@ public class TetrisApp extends Application {
         Scene scene = new Scene(createContent());
 
         scene.setOnKeyPressed(e -> {
-            if (e.getCode() == KeyCode.SPACE) {
-                makeMove(p -> p.rotate(), p -> p.rotateBack(), false);
-            } else if (e.getCode() == KeyCode.LEFT) {
-                makeMove(p -> p.move(Direction.LEFT), p -> p.move(Direction.RIGHT), false);
-            } else if (e.getCode() == KeyCode.RIGHT) {
-                makeMove(p -> p.move(Direction.RIGHT), p -> p.move(Direction.LEFT), false);
-            } else if (e.getCode() == KeyCode.DOWN) {
-                makeMove(p -> p.move(Direction.DOWN), p -> p.move(Direction.UP), true);
-            }
-
-            render();
+        	switch (e.getCode()) {
+        	case UP:
+        		makeMove(p -> p.rotate(), p -> p.rotateBack(), false);
+        		break;
+        	case LEFT:
+        		makeMove(p -> p.move(Direction.LEFT), p -> p.move(Direction.RIGHT), false);
+        		break;
+        	case RIGHT:
+        		makeMove(p -> p.move(Direction.RIGHT), p -> p.move(Direction.LEFT), false);
+        		break;
+        	case DOWN:
+        		makeMove(p -> p.move(Direction.DOWN), p -> p.move(Direction.UP), true);
+        		break;
+        	case SPACE:
+        		makeMove(p -> p.drop(), p -> p.drop(), true);
+        		break;
+        	}
+        	
+        	 render();
+           
         });
 
         stage.setScene(scene);

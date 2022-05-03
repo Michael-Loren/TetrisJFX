@@ -1,0 +1,815 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_lswFIMsJEeydgLds2bj7pw">
+  <modelElement href="TetrisJFX2.uml#_l1-SkMsJEeydgLds2bj7pw"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_t0rOgMsJEeydgLds2bj7pw" source="_t1ML6csJEeydgLds2bj7pw">
+    <modelElement href="TetrisJFX2.uml#_l9TpoMsJEeydgLds2bj7pw"/>
+    <stereotypes xmi:id="_t0r1kMsJEeydgLds2bj7pw" name="Reference">
+      <modelElement href="TetrisJFX2.uml#_l9Ws8MsJEeydgLds2bj7pw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_t0r1kcsJEeydgLds2bj7pw" text=""/>
+    <sourceRole xmi:id="_t0r1kssJEeydgLds2bj7pw" aggregationKind="NONE" name="">
+      <modelElement href="TetrisJFX2.uml#_l9TpocsJEeydgLds2bj7pw"/>
+      <visibility xmi:id="_t0scoMsJEeydgLds2bj7pw" label="+"/>
+      <cardinality xmi:id="_t0scocsJEeydgLds2bj7pw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_t0scossJEeydgLds2bj7pw" aggregationKind="NONE" name="g" navigable="true">
+      <modelElement href="TetrisJFX2.uml#_l8hmgMsJEeydgLds2bj7pw"/>
+      <stereotypes xmi:id="_HZDAoMsKEeyX_sdLICulbA" name="LegacyStyledElement">
+        <modelElement href="TetrisJFX2.uml#_l8hmgcsJEeydgLds2bj7pw"/>
+      </stereotypes>
+      <visibility xmi:id="_t0sco8sJEeydgLds2bj7pw" label="-"/>
+      <cardinality xmi:id="_t0scpMsJEeydgLds2bj7pw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_t1H6cMsJEeydgLds2bj7pw" sourceAnchor="236.0,0.0" targetAnchor="0.0,138.0" target="_t4APUMsJEeydgLds2bj7pw" source="_t1ML6csJEeydgLds2bj7pw">
+    <modelElement href="TetrisJFX2.uml#_l9XUAMsJEeydgLds2bj7pw"/>
+    <bendpoints xmi:id="_uOomoMsJEeydgLds2bj7pw" sourceY="-189" targetX="-126"/>
+    <stereotypes xmi:id="_t1H6ccsJEeydgLds2bj7pw" name="Reference">
+      <modelElement href="TetrisJFX2.uml#_l9YiIMsJEeydgLds2bj7pw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_t1H6cssJEeydgLds2bj7pw" text="">
+      <visualProperties xmi:id="_uOrp8MsJEeydgLds2bj7pw" position="-21.0,83.5"/>
+    </nameVisual>
+    <sourceRole xmi:id="_t1H6c8sJEeydgLds2bj7pw" aggregationKind="NONE" name="">
+      <modelElement href="TetrisJFX2.uml#_l9X7EMsJEeydgLds2bj7pw"/>
+      <visualProperties xmi:id="_uOp0wssJEeydgLds2bj7pw" position="-20.0,-45.5"/>
+      <visibility xmi:id="_t1H6dMsJEeydgLds2bj7pw" label="+"/>
+      <cardinality xmi:id="_t1H6dcsJEeydgLds2bj7pw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_t1H6dssJEeydgLds2bj7pw" aggregationKind="NONE" name="original" navigable="true">
+      <modelElement href="TetrisJFX2.uml#_l8i0oMsJEeydgLds2bj7pw"/>
+      <visualProperties xmi:id="_uOsRAMsJEeydgLds2bj7pw" position="-113.5,5.0"/>
+      <stereotypes xmi:id="_HZNYsMsKEeyX_sdLICulbA" name="LegacyStyledElement">
+        <modelElement href="TetrisJFX2.uml#_l8i0o8sJEeydgLds2bj7pw"/>
+      </stereotypes>
+      <visibility xmi:id="_t1H6d8sJEeydgLds2bj7pw" label="-"/>
+      <cardinality xmi:id="_t1H6eMsJEeydgLds2bj7pw" label="1..*" max="-1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_t1K9wMsJEeydgLds2bj7pw" sourceAnchor="0.0,201.0" targetAnchor="0.0,125.0" target="_t4APUMsJEeydgLds2bj7pw" source="_t1ML6csJEeydgLds2bj7pw">
+    <modelElement href="TetrisJFX2.uml#_l9ZJMMsJEeydgLds2bj7pw"/>
+    <bendpoints xmi:id="_uOpNsMsJEeydgLds2bj7pw" sourceX="-63" targetX="-425" targetY="403"/>
+    <bendpoints xmi:id="_uOpNscsJEeydgLds2bj7pw" sourceX="-63" sourceY="-403" targetX="-425"/>
+    <stereotypes xmi:id="_t1K9wcsJEeydgLds2bj7pw" name="Reference">
+      <modelElement href="TetrisJFX2.uml#_l9ZJMssJEeydgLds2bj7pw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_t1K9wssJEeydgLds2bj7pw" text="">
+      <visualProperties xmi:id="_uOs4EcsJEeydgLds2bj7pw" position="-21.0,168.5"/>
+    </nameVisual>
+    <sourceRole xmi:id="_t1K9w8sJEeydgLds2bj7pw" aggregationKind="NONE" name="">
+      <modelElement href="TetrisJFX2.uml#_l9ZJMcsJEeydgLds2bj7pw"/>
+      <visualProperties xmi:id="_uOs4EMsJEeydgLds2bj7pw" position="-18.5,5.5"/>
+      <visibility xmi:id="_t1K9xMsJEeydgLds2bj7pw" label="+"/>
+      <cardinality xmi:id="_t1K9xcsJEeydgLds2bj7pw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_t1K9xssJEeydgLds2bj7pw" aggregationKind="NONE" name="tetrominos" navigable="true">
+      <modelElement href="TetrisJFX2.uml#_l8i0pMsJEeydgLds2bj7pw"/>
+      <visualProperties xmi:id="_uOtfIMsJEeydgLds2bj7pw" position="-202.0,5.500000000000057"/>
+      <stereotypes xmi:id="_HZPN4MsKEeyX_sdLICulbA" name="LegacyStyledElement">
+        <modelElement href="TetrisJFX2.uml#_l8jbscsJEeydgLds2bj7pw"/>
+      </stereotypes>
+      <visibility xmi:id="_t1K9x8sJEeydgLds2bj7pw" label="-"/>
+      <cardinality xmi:id="_t1K9yMsJEeydgLds2bj7pw" label="1..*" max="-1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_t1ML4MsJEeydgLds2bj7pw" sourceAnchor="471.0,201.0" targetAnchor="199.0,249.0" target="_t4APUMsJEeydgLds2bj7pw" source="_t1ML6csJEeydgLds2bj7pw">
+    <modelElement href="TetrisJFX2.uml#_l9aXUMsJEeydgLds2bj7pw"/>
+    <bendpoints xmi:id="_uOpNsssJEeydgLds2bj7pw" sourceX="90" targetY="279"/>
+    <stereotypes xmi:id="_t1ML4csJEeydgLds2bj7pw" name="Reference">
+      <modelElement href="TetrisJFX2.uml#_l9a-YMsJEeydgLds2bj7pw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_t1ML4ssJEeydgLds2bj7pw" text="">
+      <visualProperties xmi:id="_uOuGMMsJEeydgLds2bj7pw" position="-21.0,-33.5"/>
+    </nameVisual>
+    <sourceRole xmi:id="_t1ML48sJEeydgLds2bj7pw" aggregationKind="NONE" name="">
+      <modelElement href="TetrisJFX2.uml#_l9aXUcsJEeydgLds2bj7pw"/>
+      <visualProperties xmi:id="_uOtfIcsJEeydgLds2bj7pw" position="5.5,-46.5"/>
+      <visibility xmi:id="_t1ML5MsJEeydgLds2bj7pw" label="+"/>
+      <cardinality xmi:id="_t1ML5csJEeydgLds2bj7pw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_t1ML5ssJEeydgLds2bj7pw" aggregationKind="NONE" name="selected" navigable="true">
+      <modelElement href="TetrisJFX2.uml#_l8jbsssJEeydgLds2bj7pw"/>
+      <visualProperties xmi:id="_uOwicMsJEeydgLds2bj7pw" position="9.5,5.5"/>
+      <stereotypes xmi:id="_HZP08MsKEeyX_sdLICulbA" name="LegacyStyledElement">
+        <modelElement href="TetrisJFX2.uml#_l8jbs8sJEeydgLds2bj7pw"/>
+      </stereotypes>
+      <visibility xmi:id="_t1ML58sJEeydgLds2bj7pw" label="-"/>
+      <cardinality xmi:id="_t1ML6MsJEeydgLds2bj7pw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_t2XQkMsJEeydgLds2bj7pw" sourceAnchor="398.0,125.0" targetAnchor="0.0,96.0" target="_t3BX4MsJEeydgLds2bj7pw" source="_t4APUMsJEeydgLds2bj7pw">
+    <modelElement href="TetrisJFX2.uml#_l9bldMsJEeydgLds2bj7pw"/>
+    <stereotypes xmi:id="_t29tgssJEeydgLds2bj7pw" name="Reference">
+      <modelElement href="TetrisJFX2.uml#_l9bldssJEeydgLds2bj7pw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_t29GcMsJEeydgLds2bj7pw" text="">
+      <visualProperties xmi:id="_uOzlwMsJEeydgLds2bj7pw" position="-30.0,-7.5"/>
+    </nameVisual>
+    <sourceRole xmi:id="_t29tgMsJEeydgLds2bj7pw" aggregationKind="NONE" name="">
+      <modelElement href="TetrisJFX2.uml#_l9bldcsJEeydgLds2bj7pw"/>
+      <visualProperties xmi:id="_uOy-scsJEeydgLds2bj7pw" position="5.0,-46.5"/>
+      <visibility xmi:id="_t2-UkcsJEeydgLds2bj7pw" label="+"/>
+      <cardinality xmi:id="_t2-UkMsJEeydgLds2bj7pw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_t29tgcsJEeydgLds2bj7pw" aggregationKind="NONE" name="pieces" navigable="true">
+      <modelElement href="TetrisJFX2.uml#_l8l38csJEeydgLds2bj7pw"/>
+      <visualProperties xmi:id="_uOzlwcsJEeydgLds2bj7pw" position="-53.5,5.5"/>
+      <stereotypes xmi:id="_t2-7ocsJEeydgLds2bj7pw" name="LegacyStyledElement">
+        <modelElement href="TetrisJFX2.uml#_l8l388sJEeydgLds2bj7pw"/>
+      </stereotypes>
+      <visibility xmi:id="_t2-7oMsJEeydgLds2bj7pw" label="+"/>
+      <cardinality xmi:id="_t2-UkssJEeydgLds2bj7pw" label="1..*" max="-1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_t2w5MMsJEeydgLds2bj7pw" sourceAnchor="207.0,0.0" targetAnchor="199.0,0.0" target="_t4APUMsJEeydgLds2bj7pw" source="_t3BX4MsJEeydgLds2bj7pw">
+    <modelElement href="TetrisJFX2.uml#_l9a-YcsJEeydgLds2bj7pw"/>
+    <bendpoints xmi:id="_uOp0wMsJEeydgLds2bj7pw" sourceY="-112" targetX="598" targetY="-83"/>
+    <bendpoints xmi:id="_uOp0wcsJEeydgLds2bj7pw" sourceX="-598" sourceY="-112" targetY="-83"/>
+    <stereotypes xmi:id="_t29thssJEeydgLds2bj7pw" name="Reference">
+      <modelElement href="TetrisJFX2.uml#_l9blcMsJEeydgLds2bj7pw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_t29tg8sJEeydgLds2bj7pw" text="">
+      <visualProperties xmi:id="_uOyXocsJEeydgLds2bj7pw" position="-281.0,-7.499999999999915"/>
+    </nameVisual>
+    <sourceRole xmi:id="_t29thMsJEeydgLds2bj7pw" aggregationKind="NONE" name="">
+      <modelElement href="TetrisJFX2.uml#_l9a-YssJEeydgLds2bj7pw"/>
+      <visualProperties xmi:id="_uOyXoMsJEeydgLds2bj7pw" position="-20.0,-46.0"/>
+      <visibility xmi:id="_t2-7o8sJEeydgLds2bj7pw" label="+"/>
+      <cardinality xmi:id="_t2-7ossJEeydgLds2bj7pw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_t29thcsJEeydgLds2bj7pw" aggregationKind="NONE" name="parent" navigable="true">
+      <modelElement href="TetrisJFX2.uml#_l8kp0csJEeydgLds2bj7pw"/>
+      <visualProperties xmi:id="_uOy-sMsJEeydgLds2bj7pw" position="-50.0,-45.500000000000085"/>
+      <stereotypes xmi:id="_HZRqIMsKEeyX_sdLICulbA" name="LegacyStyledElement">
+        <modelElement href="TetrisJFX2.uml#_l8kp0ssJEeydgLds2bj7pw"/>
+      </stereotypes>
+      <visibility xmi:id="_t2-7pcsJEeydgLds2bj7pw" label="+"/>
+      <cardinality xmi:id="_t2-7pMsJEeydgLds2bj7pw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_t3kxgMsJEeydgLds2bj7pw" source="_t4APUMsJEeydgLds2bj7pw">
+    <modelElement href="TetrisJFX2.uml#_l9blccsJEeydgLds2bj7pw"/>
+    <stereotypes xmi:id="_t3kxgcsJEeydgLds2bj7pw" name="Reference">
+      <modelElement href="TetrisJFX2.uml#_l9blc8sJEeydgLds2bj7pw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_t3kxgssJEeydgLds2bj7pw" text=""/>
+    <sourceRole xmi:id="_t3kxg8sJEeydgLds2bj7pw" aggregationKind="NONE" name="">
+      <modelElement href="TetrisJFX2.uml#_l9blcssJEeydgLds2bj7pw"/>
+      <visibility xmi:id="_t3kxhMsJEeydgLds2bj7pw" label="+"/>
+      <cardinality xmi:id="_t3kxhcsJEeydgLds2bj7pw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_t3kxhssJEeydgLds2bj7pw" aggregationKind="NONE" name="color" navigable="true">
+      <modelElement href="TetrisJFX2.uml#_l8lQ48sJEeydgLds2bj7pw"/>
+      <stereotypes xmi:id="_HZS4QMsKEeyX_sdLICulbA" name="LegacyStyledElement">
+        <modelElement href="TetrisJFX2.uml#_l8l38MsJEeydgLds2bj7pw"/>
+      </stereotypes>
+      <visibility xmi:id="_t3kxh8sJEeydgLds2bj7pw" label="+"/>
+      <cardinality xmi:id="_t3kxiMsJEeydgLds2bj7pw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_t1ML6csJEeydgLds2bj7pw" name="TetrisApp" associationsOut="_t0rOgMsJEeydgLds2bj7pw _t1H6cMsJEeydgLds2bj7pw _t1K9wMsJEeydgLds2bj7pw _t1ML4MsJEeydgLds2bj7pw">
+    <modelElement href="TetrisJFX2.uml#_l3k1EMsJEeydgLds2bj7pw"/>
+    <visualProperties xmi:id="_t1ML6ssJEeydgLds2bj7pw" position="96.0,440.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_t1ML68sJEeydgLds2bj7pw" label="+"/>
+    <attributes xmi:id="_t1My8MsJEeydgLds2bj7pw" defaultValue="40" name="TILE_SIZE" staticAttribute="true">
+      <modelElement href="TetrisJFX2.uml#_l8fxUMsJEeydgLds2bj7pw"/>
+      <visibility xmi:id="_t1My8csJEeydgLds2bj7pw" label="+"/>
+      <cardinality xmi:id="_t1My8ssJEeydgLds2bj7pw" label="1" max="1" min="1"/>
+      <type xmi:id="_t1My88sJEeydgLds2bj7pw" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_t1My9MsJEeydgLds2bj7pw" defaultValue="15" name="GRID_WIDTH" staticAttribute="true">
+      <modelElement href="TetrisJFX2.uml#_l8gYYcsJEeydgLds2bj7pw"/>
+      <visibility xmi:id="_t1My9csJEeydgLds2bj7pw" label="+"/>
+      <cardinality xmi:id="_t1My9ssJEeydgLds2bj7pw" label="1" max="1" min="1"/>
+      <type xmi:id="_t1My98sJEeydgLds2bj7pw" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_t1My-MsJEeydgLds2bj7pw" defaultValue="20" name="GRID_HEIGHT" staticAttribute="true">
+      <modelElement href="TetrisJFX2.uml#_l8gYY8sJEeydgLds2bj7pw"/>
+      <visibility xmi:id="_t1My-csJEeydgLds2bj7pw" label="+"/>
+      <cardinality xmi:id="_t1My-ssJEeydgLds2bj7pw" label="1" max="1" min="1"/>
+      <type xmi:id="_t1My-8sJEeydgLds2bj7pw" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_t1My_MsJEeydgLds2bj7pw" name="time">
+      <modelElement href="TetrisJFX2.uml#_l8g_ccsJEeydgLds2bj7pw"/>
+      <stereotypes xmi:id="_t1My_csJEeydgLds2bj7pw" name="LegacyStyledElement">
+        <modelElement href="TetrisJFX2.uml#_l8g_cssJEeydgLds2bj7pw"/>
+      </stereotypes>
+      <visibility xmi:id="_t1My_ssJEeydgLds2bj7pw" label="-"/>
+      <cardinality xmi:id="_t1My_8sJEeydgLds2bj7pw" label="1" max="1" min="1"/>
+      <type xmi:id="_t1MzAMsJEeydgLds2bj7pw" name="double">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_t1MzAcsJEeydgLds2bj7pw" name="g">
+      <modelElement href="TetrisJFX2.uml#_l8hmgMsJEeydgLds2bj7pw"/>
+      <stereotypes xmi:id="_HaZEcMsKEeyX_sdLICulbA" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_Hai1cMsKEeyX_sdLICulbA" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_HbHdMMsKEeyX_sdLICulbA" name="LegacyStyledElement"/>
+      <visibility xmi:id="_t1MzA8sJEeydgLds2bj7pw" label="-"/>
+      <cardinality xmi:id="_t1MzBMsJEeydgLds2bj7pw" label="1" max="1" min="1"/>
+      <type xmi:id="_t1MzBcsJEeydgLds2bj7pw" name="GraphicsContext">
+        <modelElement href="TetrisJFX2.uml#_l7ivE8sJEeydgLds2bj7pw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_t1MzBssJEeydgLds2bj7pw" defaultValue="new int[GRID_WIDTH][GRID_HEIGHT]" name="grid">
+      <modelElement href="TetrisJFX2.uml#_l8hmgssJEeydgLds2bj7pw"/>
+      <stereotypes xmi:id="_t1MzB8sJEeydgLds2bj7pw" name="Array">
+        <modelElement href="TetrisJFX2.uml#_l8iNkMsJEeydgLds2bj7pw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_t1MzCMsJEeydgLds2bj7pw" name="LegacyStyledElement">
+        <modelElement href="TetrisJFX2.uml#_l8iNkssJEeydgLds2bj7pw"/>
+      </stereotypes>
+      <visibility xmi:id="_t1MzCcsJEeydgLds2bj7pw" label="-"/>
+      <cardinality xmi:id="_t1MzCssJEeydgLds2bj7pw" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_t1MzC8sJEeydgLds2bj7pw" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_t1MzDMsJEeydgLds2bj7pw" defaultValue="new ArrayList&lt;>()" name="original">
+      <modelElement href="TetrisJFX2.uml#_l8i0oMsJEeydgLds2bj7pw"/>
+      <stereotypes xmi:id="_HalRsMsKEeyX_sdLICulbA" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_HarYUMsKEeyX_sdLICulbA" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_HbIrUMsKEeyX_sdLICulbA" name="LegacyStyledElement"/>
+      <visibility xmi:id="_t1MzDssJEeydgLds2bj7pw" label="-"/>
+      <cardinality xmi:id="_t1MzD8sJEeydgLds2bj7pw" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_t1MzEMsJEeydgLds2bj7pw" name="Tetromino">
+        <modelElement href="TetrisJFX2.uml#_l3wbQMsJEeydgLds2bj7pw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_t1MzEcsJEeydgLds2bj7pw" defaultValue="new ArrayList&lt;>()" name="tetrominos">
+      <modelElement href="TetrisJFX2.uml#_l8i0pMsJEeydgLds2bj7pw"/>
+      <stereotypes xmi:id="_HauboMsKEeyX_sdLICulbA" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_Haw34MsKEeyX_sdLICulbA" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_HbJSYMsKEeyX_sdLICulbA" name="LegacyStyledElement"/>
+      <visibility xmi:id="_t1MzE8sJEeydgLds2bj7pw" label="-"/>
+      <cardinality xmi:id="_t1MzFMsJEeydgLds2bj7pw" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_t1MzFcsJEeydgLds2bj7pw" name="Tetromino">
+        <modelElement href="TetrisJFX2.uml#_l3wbQMsJEeydgLds2bj7pw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_t1MzFssJEeydgLds2bj7pw" name="selected">
+      <modelElement href="TetrisJFX2.uml#_l8jbsssJEeydgLds2bj7pw"/>
+      <stereotypes xmi:id="_HaytEMsKEeyX_sdLICulbA" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_HazUIMsKEeyX_sdLICulbA" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_HbLHkMsKEeyX_sdLICulbA" name="LegacyStyledElement"/>
+      <visibility xmi:id="_t1MzGMsJEeydgLds2bj7pw" label="-"/>
+      <cardinality xmi:id="_t1MzGcsJEeydgLds2bj7pw" label="1" max="1" min="1"/>
+      <type xmi:id="_t1MzGssJEeydgLds2bj7pw" name="Tetromino">
+        <modelElement href="TetrisJFX2.uml#_l3wbQMsJEeydgLds2bj7pw"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_t1MzG8sJEeydgLds2bj7pw" name="createContent">
+      <modelElement href="TetrisJFX2.uml#_l3nRUMsJEeydgLds2bj7pw"/>
+      <visibility xmi:id="_t1MzHMsJEeydgLds2bj7pw" label="-"/>
+      <cardinality xmi:id="_t1MzHcsJEeydgLds2bj7pw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_t1MzHssJEeydgLds2bj7pw">
+        <modelElement href="TetrisJFX2.uml#_l8GvwMsJEeydgLds2bj7pw"/>
+        <type xmi:id="_t1MzH8sJEeydgLds2bj7pw" name="Parent">
+          <modelElement href="TetrisJFX2.uml#_l7g54csJEeydgLds2bj7pw"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_t1MzIMsJEeydgLds2bj7pw" name="update">
+      <modelElement href="TetrisJFX2.uml#_l3n4YMsJEeydgLds2bj7pw"/>
+      <visibility xmi:id="_t1MzIcsJEeydgLds2bj7pw" label="-"/>
+      <cardinality xmi:id="_t1MzIssJEeydgLds2bj7pw" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_t1MzI8sJEeydgLds2bj7pw" name="render">
+      <modelElement href="TetrisJFX2.uml#_l3ofcMsJEeydgLds2bj7pw"/>
+      <visibility xmi:id="_t1MzJMsJEeydgLds2bj7pw" label="-"/>
+      <cardinality xmi:id="_t1MzJcsJEeydgLds2bj7pw" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_t1MzJssJEeydgLds2bj7pw" name="isValidState">
+      <modelElement href="TetrisJFX2.uml#_l3pGgMsJEeydgLds2bj7pw"/>
+      <visibility xmi:id="_t1MzJ8sJEeydgLds2bj7pw" label="-"/>
+      <cardinality xmi:id="_t1MzKMsJEeydgLds2bj7pw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_t1MzKcsJEeydgLds2bj7pw">
+        <modelElement href="TetrisJFX2.uml#_l3pGgcsJEeydgLds2bj7pw"/>
+        <type xmi:id="_t1MzKssJEeydgLds2bj7pw" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_t1MzK8sJEeydgLds2bj7pw" name="sweep">
+      <modelElement href="TetrisJFX2.uml#_l3pGgssJEeydgLds2bj7pw"/>
+      <visibility xmi:id="_t1MzLMsJEeydgLds2bj7pw" label="-"/>
+      <cardinality xmi:id="_t1MzLcsJEeydgLds2bj7pw" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_t1MzLssJEeydgLds2bj7pw" name="sweepRows">
+      <modelElement href="TetrisJFX2.uml#_l3pGg8sJEeydgLds2bj7pw"/>
+      <visibility xmi:id="_t1MzL8sJEeydgLds2bj7pw" label="-"/>
+      <cardinality xmi:id="_t1MzMMsJEeydgLds2bj7pw" label="1..*" max="-1" min="1"/>
+      <outParameters xmi:id="_t1MzMcsJEeydgLds2bj7pw">
+        <modelElement href="TetrisJFX2.uml#_l3pGhMsJEeydgLds2bj7pw"/>
+        <type xmi:id="_t1MzMssJEeydgLds2bj7pw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_t1MzM8sJEeydgLds2bj7pw" name="spawn">
+      <modelElement href="TetrisJFX2.uml#_l3qUoMsJEeydgLds2bj7pw"/>
+      <visibility xmi:id="_t1MzNMsJEeydgLds2bj7pw" label="-"/>
+      <cardinality xmi:id="_t1MzNcsJEeydgLds2bj7pw" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_t1MzNssJEeydgLds2bj7pw" name="main" staticOperation="true">
+      <modelElement href="TetrisJFX2.uml#_l3qUocsJEeydgLds2bj7pw"/>
+      <visibility xmi:id="_t1MzN8sJEeydgLds2bj7pw" label="+"/>
+      <cardinality xmi:id="_t1MzOMsJEeydgLds2bj7pw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_t1MzOcsJEeydgLds2bj7pw" name="args">
+        <modelElement href="TetrisJFX2.uml#_l3qUossJEeydgLds2bj7pw"/>
+        <cardinality xmi:id="_t1MzOssJEeydgLds2bj7pw" label="1..*" max="-1" min="1"/>
+        <type xmi:id="_t1MzO8sJEeydgLds2bj7pw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_t1MzPMsJEeydgLds2bj7pw" name="placePiece">
+      <modelElement href="TetrisJFX2.uml#_l7o1sMsJEeydgLds2bj7pw"/>
+      <visibility xmi:id="_t1MzPcsJEeydgLds2bj7pw" label="-"/>
+      <cardinality xmi:id="_t1MzPssJEeydgLds2bj7pw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_t1MzP8sJEeydgLds2bj7pw" name="piece">
+        <modelElement href="TetrisJFX2.uml#_l7o1scsJEeydgLds2bj7pw"/>
+        <cardinality xmi:id="_t1MzQMsJEeydgLds2bj7pw" label="1" max="1" min="1"/>
+        <type xmi:id="_t1MzQcsJEeydgLds2bj7pw" name="TetrisPiece">
+          <modelElement href="TetrisJFX2.uml#_l3t_AMsJEeydgLds2bj7pw"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_t1MzQssJEeydgLds2bj7pw" name="removePiece">
+      <modelElement href="TetrisJFX2.uml#_l7pcwMsJEeydgLds2bj7pw"/>
+      <visibility xmi:id="_t1MzQ8sJEeydgLds2bj7pw" label="-"/>
+      <cardinality xmi:id="_t1MzRMsJEeydgLds2bj7pw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_t1MzRcsJEeydgLds2bj7pw" name="piece">
+        <modelElement href="TetrisJFX2.uml#_l7qD0MsJEeydgLds2bj7pw"/>
+        <cardinality xmi:id="_t1MzRssJEeydgLds2bj7pw" label="1" max="1" min="1"/>
+        <type xmi:id="_t1MzR8sJEeydgLds2bj7pw" name="TetrisPiece">
+          <modelElement href="TetrisJFX2.uml#_l3t_AMsJEeydgLds2bj7pw"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_t1MzSMsJEeydgLds2bj7pw" name="isOffscreen">
+      <modelElement href="TetrisJFX2.uml#_l7qD0csJEeydgLds2bj7pw"/>
+      <visibility xmi:id="_t1MzScsJEeydgLds2bj7pw" label="-"/>
+      <cardinality xmi:id="_t1MzSssJEeydgLds2bj7pw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_t1MzS8sJEeydgLds2bj7pw">
+        <modelElement href="TetrisJFX2.uml#_l7qD08sJEeydgLds2bj7pw"/>
+        <type xmi:id="_t1MzTMsJEeydgLds2bj7pw" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_t1MzTcsJEeydgLds2bj7pw" name="piece">
+        <modelElement href="TetrisJFX2.uml#_l7qD0ssJEeydgLds2bj7pw"/>
+        <cardinality xmi:id="_t1MzTssJEeydgLds2bj7pw" label="1" max="1" min="1"/>
+        <type xmi:id="_t1MzT8sJEeydgLds2bj7pw" name="TetrisPiece">
+          <modelElement href="TetrisJFX2.uml#_l3t_AMsJEeydgLds2bj7pw"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_t1MzUMsJEeydgLds2bj7pw" name="makeMove">
+      <modelElement href="TetrisJFX2.uml#_l8HW0MsJEeydgLds2bj7pw"/>
+      <visibility xmi:id="_t1MzUcsJEeydgLds2bj7pw" label="-"/>
+      <cardinality xmi:id="_t1MzUssJEeydgLds2bj7pw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_t1MzU8sJEeydgLds2bj7pw" name="onSuccess">
+        <modelElement href="TetrisJFX2.uml#_l8HW0csJEeydgLds2bj7pw"/>
+        <cardinality xmi:id="_t1MzVMsJEeydgLds2bj7pw" label="1" max="1" min="1"/>
+        <type xmi:id="_t1MzVcsJEeydgLds2bj7pw" name="Consumer">
+          <modelElement href="TetrisJFX2.uml#_l7nAgcsJEeydgLds2bj7pw"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_t1MzVssJEeydgLds2bj7pw" name="onFail">
+        <modelElement href="TetrisJFX2.uml#_l8HW0ssJEeydgLds2bj7pw"/>
+        <cardinality xmi:id="_t1MzV8sJEeydgLds2bj7pw" label="1" max="1" min="1"/>
+        <type xmi:id="_t1MzWMsJEeydgLds2bj7pw" name="Consumer">
+          <modelElement href="TetrisJFX2.uml#_l7nAgcsJEeydgLds2bj7pw"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_t1MzWcsJEeydgLds2bj7pw" name="endMove">
+        <modelElement href="TetrisJFX2.uml#_l8H94MsJEeydgLds2bj7pw"/>
+        <cardinality xmi:id="_t1MzWssJEeydgLds2bj7pw" label="1" max="1" min="1"/>
+        <type xmi:id="_t1MzW8sJEeydgLds2bj7pw" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_t1MzXMsJEeydgLds2bj7pw" name="start">
+      <modelElement href="TetrisJFX2.uml#_l8OrkcsJEeydgLds2bj7pw"/>
+      <stereotypes xmi:id="_t1MzXcsJEeydgLds2bj7pw" name="LegacyStyledElement">
+        <modelElement href="TetrisJFX2.uml#_l8PSoMsJEeydgLds2bj7pw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_t1MzXssJEeydgLds2bj7pw" name="Annotations">
+        <modelElement href="TetrisJFX2.uml#_l8QgwMsJEeydgLds2bj7pw"/>
+      </stereotypes>
+      <visibility xmi:id="_t1MzX8sJEeydgLds2bj7pw" label="+"/>
+      <cardinality xmi:id="_t1MzYMsJEeydgLds2bj7pw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_t1MzYcsJEeydgLds2bj7pw" name="stage">
+        <modelElement href="TetrisJFX2.uml#_l8OrkssJEeydgLds2bj7pw"/>
+        <cardinality xmi:id="_t1MzYssJEeydgLds2bj7pw" label="1" max="1" min="1"/>
+        <type xmi:id="_t1MzY8sJEeydgLds2bj7pw" name="Stage">
+          <modelElement href="TetrisJFX2.uml#_l7kkQcsJEeydgLds2bj7pw"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_t3BX4MsJEeydgLds2bj7pw" name="TetrisPiece" associationsIn="_t2XQkMsJEeydgLds2bj7pw" associationsOut="_t2w5MMsJEeydgLds2bj7pw">
+    <modelElement href="TetrisJFX2.uml#_l3t_AMsJEeydgLds2bj7pw"/>
+    <visualProperties xmi:id="_t3BX4csJEeydgLds2bj7pw" position="1048.0,142.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_t3BX4ssJEeydgLds2bj7pw" label="+"/>
+    <attributes xmi:id="_t3BX48sJEeydgLds2bj7pw" name="distance">
+      <modelElement href="TetrisJFX2.uml#_l8jbtMsJEeydgLds2bj7pw"/>
+      <stereotypes xmi:id="_t3BX5MsJEeydgLds2bj7pw" name="LegacyStyledElement">
+        <modelElement href="TetrisJFX2.uml#_l8kCwMsJEeydgLds2bj7pw"/>
+      </stereotypes>
+      <visibility xmi:id="_t3BX5csJEeydgLds2bj7pw" label="+"/>
+      <cardinality xmi:id="_t3BX5ssJEeydgLds2bj7pw" label="1" max="1" min="1"/>
+      <type xmi:id="_t3BX58sJEeydgLds2bj7pw" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_t3BX6MsJEeydgLds2bj7pw" name="directions">
+      <modelElement href="TetrisJFX2.uml#_l8kCwcsJEeydgLds2bj7pw"/>
+      <stereotypes xmi:id="_t3BX6csJEeydgLds2bj7pw" name="LegacyStyledElement">
+        <modelElement href="TetrisJFX2.uml#_l8kp0MsJEeydgLds2bj7pw"/>
+      </stereotypes>
+      <visibility xmi:id="_t3BX6ssJEeydgLds2bj7pw" label="+"/>
+      <cardinality xmi:id="_t3BX68sJEeydgLds2bj7pw" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_t3BX7MsJEeydgLds2bj7pw" name="Direction">
+        <modelElement href="TetrisJFX2.uml#_l3A0YMsJEeydgLds2bj7pw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_t3BX7csJEeydgLds2bj7pw" name="parent">
+      <modelElement href="TetrisJFX2.uml#_l8kp0csJEeydgLds2bj7pw"/>
+      <stereotypes xmi:id="_Ha4zsMsKEeyX_sdLICulbA" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_Ha8eEMsKEeyX_sdLICulbA" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_HbOx8MsKEeyX_sdLICulbA" name="LegacyStyledElement"/>
+      <visibility xmi:id="_t3BX78sJEeydgLds2bj7pw" label="+"/>
+      <cardinality xmi:id="_t3BX8MsJEeydgLds2bj7pw" label="1" max="1" min="1"/>
+      <type xmi:id="_t3BX8csJEeydgLds2bj7pw" name="Tetromino">
+        <modelElement href="TetrisJFX2.uml#_l3wbQMsJEeydgLds2bj7pw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_t3BX8ssJEeydgLds2bj7pw" name="x">
+      <modelElement href="TetrisJFX2.uml#_l8kp08sJEeydgLds2bj7pw"/>
+      <stereotypes xmi:id="_t3BX88sJEeydgLds2bj7pw" name="MultiDeclaration">
+        <modelElement href="TetrisJFX2.uml#_l8kp1MsJEeydgLds2bj7pw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_t3BX9MsJEeydgLds2bj7pw" name="LegacyStyledElement">
+        <modelElement href="TetrisJFX2.uml#_l8kp1csJEeydgLds2bj7pw"/>
+      </stereotypes>
+      <visibility xmi:id="_t3BX9csJEeydgLds2bj7pw" label="+"/>
+      <cardinality xmi:id="_t3BX9ssJEeydgLds2bj7pw" label="1" max="1" min="1"/>
+      <type xmi:id="_t3BX98sJEeydgLds2bj7pw" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_t3BX-MsJEeydgLds2bj7pw" name="y">
+      <modelElement href="TetrisJFX2.uml#_l8_gkMsJEeydgLds2bj7pw"/>
+      <stereotypes xmi:id="_t3BX-csJEeydgLds2bj7pw" name="MultiDeclaration">
+        <modelElement href="TetrisJFX2.uml#_l8_gkcsJEeydgLds2bj7pw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_t3BX-ssJEeydgLds2bj7pw" name="LegacyStyledElement">
+        <modelElement href="TetrisJFX2.uml#_l9AHoMsJEeydgLds2bj7pw"/>
+      </stereotypes>
+      <visibility xmi:id="_t3BX-8sJEeydgLds2bj7pw" label="+"/>
+      <cardinality xmi:id="_t3BX_MsJEeydgLds2bj7pw" label="1" max="1" min="1"/>
+      <type xmi:id="_t3BX_csJEeydgLds2bj7pw" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_t3BX_ssJEeydgLds2bj7pw" name="copy">
+      <modelElement href="TetrisJFX2.uml#_l3umEMsJEeydgLds2bj7pw"/>
+      <visibility xmi:id="_t3BX_8sJEeydgLds2bj7pw" label="+"/>
+      <cardinality xmi:id="_t3BYAMsJEeydgLds2bj7pw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_t3BYAcsJEeydgLds2bj7pw">
+        <modelElement href="TetrisJFX2.uml#_l74GQMsJEeydgLds2bj7pw"/>
+        <type xmi:id="_t3BYAssJEeydgLds2bj7pw" name="TetrisPiece">
+          <modelElement href="TetrisJFX2.uml#_l3t_AMsJEeydgLds2bj7pw"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_t3BYA8sJEeydgLds2bj7pw" name="TetrisPiece">
+      <modelElement href="TetrisJFX2.uml#_l7wxgMsJEeydgLds2bj7pw"/>
+      <keywords xmi:id="_t3BYBMsJEeydgLds2bj7pw" keyword="create"/>
+      <stereotypes xmi:id="_t3BYBcsJEeydgLds2bj7pw" name="LegacyStyledElement">
+        <modelElement href="TetrisJFX2.uml#_l7ymscsJEeydgLds2bj7pw"/>
+      </stereotypes>
+      <visibility xmi:id="_t3BYBssJEeydgLds2bj7pw" label="+"/>
+      <cardinality xmi:id="_t3BYB8sJEeydgLds2bj7pw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_t3BYCMsJEeydgLds2bj7pw">
+        <modelElement href="TetrisJFX2.uml#_l7zNwMsJEeydgLds2bj7pw"/>
+        <type xmi:id="_t3BYCcsJEeydgLds2bj7pw" name="TetrisPiece">
+          <modelElement href="TetrisJFX2.uml#_l3t_AMsJEeydgLds2bj7pw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_t3BYCssJEeydgLds2bj7pw" name="distance">
+        <modelElement href="TetrisJFX2.uml#_l7xYkMsJEeydgLds2bj7pw"/>
+        <cardinality xmi:id="_t3BYC8sJEeydgLds2bj7pw" label="1" max="1" min="1"/>
+        <type xmi:id="_t3BYDMsJEeydgLds2bj7pw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_t3BYDcsJEeydgLds2bj7pw" name="direction">
+        <modelElement href="TetrisJFX2.uml#_l7xYkcsJEeydgLds2bj7pw"/>
+        <cardinality xmi:id="_t3BYDssJEeydgLds2bj7pw" label="1..*" max="-1" min="1"/>
+        <type xmi:id="_t3BYD8sJEeydgLds2bj7pw" name="Direction">
+          <modelElement href="TetrisJFX2.uml#_l3A0YMsJEeydgLds2bj7pw"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_t3BYEMsJEeydgLds2bj7pw" name="setParent">
+      <modelElement href="TetrisJFX2.uml#_l71C8MsJEeydgLds2bj7pw"/>
+      <visibility xmi:id="_t3BYEcsJEeydgLds2bj7pw" label="+"/>
+      <cardinality xmi:id="_t3BYEssJEeydgLds2bj7pw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_t3BYE8sJEeydgLds2bj7pw" name="parent">
+        <modelElement href="TetrisJFX2.uml#_l71qAMsJEeydgLds2bj7pw"/>
+        <cardinality xmi:id="_t3BYFMsJEeydgLds2bj7pw" label="1" max="1" min="1"/>
+        <type xmi:id="_t3BYFcsJEeydgLds2bj7pw" name="Tetromino">
+          <modelElement href="TetrisJFX2.uml#_l3wbQMsJEeydgLds2bj7pw"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_t3BYFssJEeydgLds2bj7pw" name="setDirection">
+      <modelElement href="TetrisJFX2.uml#_l72REMsJEeydgLds2bj7pw"/>
+      <stereotypes xmi:id="_t3BYF8sJEeydgLds2bj7pw" name="LegacyStyledElement">
+        <modelElement href="TetrisJFX2.uml#_l73fMMsJEeydgLds2bj7pw"/>
+      </stereotypes>
+      <visibility xmi:id="_t3BYGMsJEeydgLds2bj7pw" label="+"/>
+      <cardinality xmi:id="_t3BYGcsJEeydgLds2bj7pw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_t3BYGssJEeydgLds2bj7pw" name="direction">
+        <modelElement href="TetrisJFX2.uml#_l72REcsJEeydgLds2bj7pw"/>
+        <cardinality xmi:id="_t3BYG8sJEeydgLds2bj7pw" label="1..*" max="-1" min="1"/>
+        <type xmi:id="_t3BYHMsJEeydgLds2bj7pw" name="Direction">
+          <modelElement href="TetrisJFX2.uml#_l3A0YMsJEeydgLds2bj7pw"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_t4APUMsJEeydgLds2bj7pw" name="Tetromino" associationsIn="_t1H6cMsJEeydgLds2bj7pw _t1K9wMsJEeydgLds2bj7pw _t1ML4MsJEeydgLds2bj7pw _t2w5MMsJEeydgLds2bj7pw" associationsOut="_t2XQkMsJEeydgLds2bj7pw _t3kxgMsJEeydgLds2bj7pw">
+    <modelElement href="TetrisJFX2.uml#_l3wbQMsJEeydgLds2bj7pw"/>
+    <visualProperties xmi:id="_t4APUcsJEeydgLds2bj7pw" position="458.0,113.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_t4APUssJEeydgLds2bj7pw" label="+"/>
+    <attributes xmi:id="_t4APU8sJEeydgLds2bj7pw" name="x">
+      <modelElement href="TetrisJFX2.uml#_l8lQ4MsJEeydgLds2bj7pw"/>
+      <stereotypes xmi:id="_t4APVMsJEeydgLds2bj7pw" name="MultiDeclaration">
+        <modelElement href="TetrisJFX2.uml#_l8lQ4csJEeydgLds2bj7pw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_t4APVcsJEeydgLds2bj7pw" name="LegacyStyledElement">
+        <modelElement href="TetrisJFX2.uml#_l8lQ4ssJEeydgLds2bj7pw"/>
+      </stereotypes>
+      <visibility xmi:id="_t4APVssJEeydgLds2bj7pw" label="+"/>
+      <cardinality xmi:id="_t4APV8sJEeydgLds2bj7pw" label="1" max="1" min="1"/>
+      <type xmi:id="_t4APWMsJEeydgLds2bj7pw" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_t4APWcsJEeydgLds2bj7pw" name="color">
+      <modelElement href="TetrisJFX2.uml#_l8lQ48sJEeydgLds2bj7pw"/>
+      <stereotypes xmi:id="_HbBWkMsKEeyX_sdLICulbA" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_HbDy0MsKEeyX_sdLICulbA" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_HbROMMsKEeyX_sdLICulbA" name="LegacyStyledElement"/>
+      <visibility xmi:id="_t4APW8sJEeydgLds2bj7pw" label="+"/>
+      <cardinality xmi:id="_t4APXMsJEeydgLds2bj7pw" label="1" max="1" min="1"/>
+      <type xmi:id="_t4APXcsJEeydgLds2bj7pw" name="Color">
+        <modelElement href="TetrisJFX2.uml#_l7j9M8sJEeydgLds2bj7pw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_t4APXssJEeydgLds2bj7pw" name="pieces">
+      <modelElement href="TetrisJFX2.uml#_l8l38csJEeydgLds2bj7pw"/>
+      <stereotypes xmi:id="_Ha2XcMsKEeyX_sdLICulbA" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_Ha4MoMsKEeyX_sdLICulbA" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_HbTDYMsKEeyX_sdLICulbA" name="LegacyStyledElement"/>
+      <visibility xmi:id="_t4APX8sJEeydgLds2bj7pw" label="+"/>
+      <cardinality xmi:id="_t4APYMsJEeydgLds2bj7pw" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_t4APYcsJEeydgLds2bj7pw" name="TetrisPiece">
+        <modelElement href="TetrisJFX2.uml#_l3t_AMsJEeydgLds2bj7pw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_t4APYssJEeydgLds2bj7pw" name="y">
+      <modelElement href="TetrisJFX2.uml#_l9AusMsJEeydgLds2bj7pw"/>
+      <stereotypes xmi:id="_t4APY8sJEeydgLds2bj7pw" name="MultiDeclaration">
+        <modelElement href="TetrisJFX2.uml#_l9BVwMsJEeydgLds2bj7pw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_t4APZMsJEeydgLds2bj7pw" name="LegacyStyledElement">
+        <modelElement href="TetrisJFX2.uml#_l9B80MsJEeydgLds2bj7pw"/>
+      </stereotypes>
+      <visibility xmi:id="_t4APZcsJEeydgLds2bj7pw" label="+"/>
+      <cardinality xmi:id="_t4APZssJEeydgLds2bj7pw" label="1" max="1" min="1"/>
+      <type xmi:id="_t4APZ8sJEeydgLds2bj7pw" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_t4APaMsJEeydgLds2bj7pw" name="move">
+      <modelElement href="TetrisJFX2.uml#_l3xpYMsJEeydgLds2bj7pw"/>
+      <visibility xmi:id="_t4APacsJEeydgLds2bj7pw" label="+"/>
+      <cardinality xmi:id="_t4APassJEeydgLds2bj7pw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_t4A2YMsJEeydgLds2bj7pw" name="dx">
+        <modelElement href="TetrisJFX2.uml#_l3xpYcsJEeydgLds2bj7pw"/>
+        <cardinality xmi:id="_t4A2YcsJEeydgLds2bj7pw" label="1" max="1" min="1"/>
+        <type xmi:id="_t4A2YssJEeydgLds2bj7pw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_t4A2Y8sJEeydgLds2bj7pw" name="dy">
+        <modelElement href="TetrisJFX2.uml#_l3xpYssJEeydgLds2bj7pw"/>
+        <cardinality xmi:id="_t4A2ZMsJEeydgLds2bj7pw" label="1" max="1" min="1"/>
+        <type xmi:id="_t4A2ZcsJEeydgLds2bj7pw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_t4A2ZssJEeydgLds2bj7pw" name="rotateBack">
+      <modelElement href="TetrisJFX2.uml#_l3yQcMsJEeydgLds2bj7pw"/>
+      <visibility xmi:id="_t4A2Z8sJEeydgLds2bj7pw" label="+"/>
+      <cardinality xmi:id="_t4A2aMsJEeydgLds2bj7pw" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_t4A2acsJEeydgLds2bj7pw" name="rotate">
+      <modelElement href="TetrisJFX2.uml#_l3yQccsJEeydgLds2bj7pw"/>
+      <visibility xmi:id="_t4A2assJEeydgLds2bj7pw" label="+"/>
+      <cardinality xmi:id="_t4A2a8sJEeydgLds2bj7pw" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_t4A2bMsJEeydgLds2bj7pw" name="detach">
+      <modelElement href="TetrisJFX2.uml#_l3yQcssJEeydgLds2bj7pw"/>
+      <visibility xmi:id="_t4A2bcsJEeydgLds2bj7pw" label="+"/>
+      <cardinality xmi:id="_t4A2bssJEeydgLds2bj7pw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_t4A2b8sJEeydgLds2bj7pw" name="x">
+        <modelElement href="TetrisJFX2.uml#_l3yQc8sJEeydgLds2bj7pw"/>
+        <cardinality xmi:id="_t4A2cMsJEeydgLds2bj7pw" label="1" max="1" min="1"/>
+        <type xmi:id="_t4A2ccsJEeydgLds2bj7pw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_t4A2cssJEeydgLds2bj7pw" name="y">
+        <modelElement href="TetrisJFX2.uml#_l3yQdMsJEeydgLds2bj7pw"/>
+        <cardinality xmi:id="_t4A2c8sJEeydgLds2bj7pw" label="1" max="1" min="1"/>
+        <type xmi:id="_t4A2dMsJEeydgLds2bj7pw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_t4A2dcsJEeydgLds2bj7pw" name="copy">
+      <modelElement href="TetrisJFX2.uml#_l3yQdcsJEeydgLds2bj7pw"/>
+      <visibility xmi:id="_t4A2dssJEeydgLds2bj7pw" label="+"/>
+      <cardinality xmi:id="_t4A2d8sJEeydgLds2bj7pw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_t4A2eMsJEeydgLds2bj7pw">
+        <modelElement href="TetrisJFX2.uml#_l8CeUMsJEeydgLds2bj7pw"/>
+        <type xmi:id="_t4A2ecsJEeydgLds2bj7pw" name="Tetromino">
+          <modelElement href="TetrisJFX2.uml#_l3wbQMsJEeydgLds2bj7pw"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_t4A2essJEeydgLds2bj7pw" name="move">
+      <modelElement href="TetrisJFX2.uml#_l8ApIMsJEeydgLds2bj7pw"/>
+      <visibility xmi:id="_t4A2e8sJEeydgLds2bj7pw" label="+"/>
+      <cardinality xmi:id="_t4A2fMsJEeydgLds2bj7pw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_t4A2fcsJEeydgLds2bj7pw" name="direction">
+        <modelElement href="TetrisJFX2.uml#_l8B3QMsJEeydgLds2bj7pw"/>
+        <cardinality xmi:id="_t4A2fssJEeydgLds2bj7pw" label="1" max="1" min="1"/>
+        <type xmi:id="_t4A2f8sJEeydgLds2bj7pw" name="Direction">
+          <modelElement href="TetrisJFX2.uml#_l3A0YMsJEeydgLds2bj7pw"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_t4A2gMsJEeydgLds2bj7pw" name="Tetromino">
+      <modelElement href="TetrisJFX2.uml#_l8XOcMsJEeydgLds2bj7pw"/>
+      <keywords xmi:id="_t4A2gcsJEeydgLds2bj7pw" keyword="create"/>
+      <stereotypes xmi:id="_t4A2gssJEeydgLds2bj7pw" name="LegacyStyledElement">
+        <modelElement href="TetrisJFX2.uml#_l8ZDoMsJEeydgLds2bj7pw"/>
+      </stereotypes>
+      <visibility xmi:id="_t4A2g8sJEeydgLds2bj7pw" label="+"/>
+      <cardinality xmi:id="_t4A2hMsJEeydgLds2bj7pw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_t4A2hcsJEeydgLds2bj7pw">
+        <modelElement href="TetrisJFX2.uml#_l8ZqsMsJEeydgLds2bj7pw"/>
+        <type xmi:id="_t4A2hssJEeydgLds2bj7pw" name="Tetromino">
+          <modelElement href="TetrisJFX2.uml#_l3wbQMsJEeydgLds2bj7pw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_t4A2h8sJEeydgLds2bj7pw" name="color">
+        <modelElement href="TetrisJFX2.uml#_l8XOccsJEeydgLds2bj7pw"/>
+        <cardinality xmi:id="_t4A2iMsJEeydgLds2bj7pw" label="1" max="1" min="1"/>
+        <type xmi:id="_t4A2icsJEeydgLds2bj7pw" name="Color">
+          <modelElement href="TetrisJFX2.uml#_l7j9M8sJEeydgLds2bj7pw"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_t4A2issJEeydgLds2bj7pw" name="pieces">
+        <modelElement href="TetrisJFX2.uml#_l8XOcssJEeydgLds2bj7pw"/>
+        <cardinality xmi:id="_t4A2i8sJEeydgLds2bj7pw" label="1..*" max="-1" min="1"/>
+        <type xmi:id="_t4A2jMsJEeydgLds2bj7pw" name="TetrisPiece">
+          <modelElement href="TetrisJFX2.uml#_l3t_AMsJEeydgLds2bj7pw"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_t4A2jcsJEeydgLds2bj7pw" name="draw">
+      <modelElement href="TetrisJFX2.uml#_l8aRwcsJEeydgLds2bj7pw"/>
+      <visibility xmi:id="_t4A2jssJEeydgLds2bj7pw" label="+"/>
+      <cardinality xmi:id="_t4A2j8sJEeydgLds2bj7pw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_t4A2kMsJEeydgLds2bj7pw" name="g">
+        <modelElement href="TetrisJFX2.uml#_l8a40MsJEeydgLds2bj7pw"/>
+        <cardinality xmi:id="_t4A2kcsJEeydgLds2bj7pw" label="1" max="1" min="1"/>
+        <type xmi:id="_t4A2kssJEeydgLds2bj7pw" name="GraphicsContext">
+          <modelElement href="TetrisJFX2.uml#_l7ivE8sJEeydgLds2bj7pw"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:EnumerationVisual" xmi:id="_t5TP0MsJEeydgLds2bj7pw" name="Direction">
+    <modelElement href="TetrisJFX2.uml#_l3A0YMsJEeydgLds2bj7pw"/>
+    <visualProperties xmi:id="_t5TP0csJEeydgLds2bj7pw" position="798.0,598.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_t5TP0ssJEeydgLds2bj7pw" name="Patch">
+      <modelElement href="TetrisJFX2.uml#_otCmUMsJEeydgLds2bj7pw"/>
+    </stereotypes>
+    <visibility xmi:id="_t5T24MsJEeydgLds2bj7pw" label="+"/>
+    <attributes xmi:id="_t5T24csJEeydgLds2bj7pw" name="x">
+      <modelElement href="TetrisJFX2.uml#_l8cG8MsJEeydgLds2bj7pw"/>
+      <stereotypes xmi:id="_t5T24ssJEeydgLds2bj7pw" name="MultiDeclaration">
+        <modelElement href="TetrisJFX2.uml#_l8dVEMsJEeydgLds2bj7pw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_t5T248sJEeydgLds2bj7pw" name="LegacyStyledElement">
+        <modelElement href="TetrisJFX2.uml#_l8d8IMsJEeydgLds2bj7pw"/>
+      </stereotypes>
+      <visibility xmi:id="_t5T25MsJEeydgLds2bj7pw" label="~"/>
+      <cardinality xmi:id="_t5T25csJEeydgLds2bj7pw" label="1" max="1" min="1"/>
+      <type xmi:id="_t5T25ssJEeydgLds2bj7pw" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_t5T258sJEeydgLds2bj7pw" name="y">
+      <modelElement href="TetrisJFX2.uml#_l89EUMsJEeydgLds2bj7pw"/>
+      <stereotypes xmi:id="_t5T26MsJEeydgLds2bj7pw" name="MultiDeclaration">
+        <modelElement href="TetrisJFX2.uml#_l89rYMsJEeydgLds2bj7pw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_t5T26csJEeydgLds2bj7pw" name="LegacyStyledElement">
+        <modelElement href="TetrisJFX2.uml#_l8-ScMsJEeydgLds2bj7pw"/>
+      </stereotypes>
+      <visibility xmi:id="_t5T26ssJEeydgLds2bj7pw" label="~"/>
+      <cardinality xmi:id="_t5T268sJEeydgLds2bj7pw" label="1" max="1" min="1"/>
+      <type xmi:id="_t5T27MsJEeydgLds2bj7pw" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_t5T27csJEeydgLds2bj7pw" name="Direction">
+      <modelElement href="TetrisJFX2.uml#_l3fVgMsJEeydgLds2bj7pw"/>
+      <keywords xmi:id="_t5T27ssJEeydgLds2bj7pw" keyword="create"/>
+      <visibility xmi:id="_t5T278sJEeydgLds2bj7pw" label="~"/>
+      <cardinality xmi:id="_t5T28MsJEeydgLds2bj7pw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_t5T28csJEeydgLds2bj7pw">
+        <modelElement href="TetrisJFX2.uml#_l3iY0MsJEeydgLds2bj7pw"/>
+        <type xmi:id="_t5T28ssJEeydgLds2bj7pw" name="Direction">
+          <modelElement href="TetrisJFX2.uml#_l3A0YMsJEeydgLds2bj7pw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_t5T288sJEeydgLds2bj7pw" name="x">
+        <modelElement href="TetrisJFX2.uml#_l3f8kMsJEeydgLds2bj7pw"/>
+        <cardinality xmi:id="_t5T29MsJEeydgLds2bj7pw" label="1" max="1" min="1"/>
+        <type xmi:id="_t5T29csJEeydgLds2bj7pw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_t5T29ssJEeydgLds2bj7pw" name="y">
+        <modelElement href="TetrisJFX2.uml#_l3f8kcsJEeydgLds2bj7pw"/>
+        <cardinality xmi:id="_t5T298sJEeydgLds2bj7pw" label="1" max="1" min="1"/>
+        <type xmi:id="_t5T2-MsJEeydgLds2bj7pw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_t5T2-csJEeydgLds2bj7pw" name="prev">
+      <modelElement href="TetrisJFX2.uml#_l3i_4MsJEeydgLds2bj7pw"/>
+      <visibility xmi:id="_t5T2-ssJEeydgLds2bj7pw" label="+"/>
+      <cardinality xmi:id="_t5T2-8sJEeydgLds2bj7pw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_t5T2_MsJEeydgLds2bj7pw">
+        <modelElement href="TetrisJFX2.uml#_l7K7oMsJEeydgLds2bj7pw"/>
+        <type xmi:id="_t5T2_csJEeydgLds2bj7pw" name="Direction">
+          <modelElement href="TetrisJFX2.uml#_l3A0YMsJEeydgLds2bj7pw"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_t5T2_ssJEeydgLds2bj7pw" name="next">
+      <modelElement href="TetrisJFX2.uml#_l3jm8MsJEeydgLds2bj7pw"/>
+      <visibility xmi:id="_t5T2_8sJEeydgLds2bj7pw" label="+"/>
+      <cardinality xmi:id="_t5T3AMsJEeydgLds2bj7pw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_t5T3AcsJEeydgLds2bj7pw">
+        <modelElement href="TetrisJFX2.uml#_l7UFkMsJEeydgLds2bj7pw"/>
+        <type xmi:id="_t5T3AssJEeydgLds2bj7pw" name="Direction">
+          <modelElement href="TetrisJFX2.uml#_l3A0YMsJEeydgLds2bj7pw"/>
+        </type>
+      </outParameters>
+    </operations>
+    <literals xmi:id="_t5T3A8sJEeydgLds2bj7pw" name="UP">
+      <modelElement href="TetrisJFX2.uml#_l3TvUMsJEeydgLds2bj7pw"/>
+    </literals>
+    <literals xmi:id="_t5T3BMsJEeydgLds2bj7pw" name="RIGHT">
+      <modelElement href="TetrisJFX2.uml#_l3Yn0MsJEeydgLds2bj7pw"/>
+    </literals>
+    <literals xmi:id="_t5T3BcsJEeydgLds2bj7pw" name="DOWN">
+      <modelElement href="TetrisJFX2.uml#_l3ZO4csJEeydgLds2bj7pw"/>
+    </literals>
+    <literals xmi:id="_t5T3BssJEeydgLds2bj7pw" name="LEFT">
+      <modelElement href="TetrisJFX2.uml#_l3ZO48sJEeydgLds2bj7pw"/>
+    </literals>
+  </nodes>
+</com.yattasolutions.uml.diagrams.classifier:ClassDiagram>

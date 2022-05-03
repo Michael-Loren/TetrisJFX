@@ -11,49 +11,67 @@ import java.util.stream.Collectors;
 import static main.TetrisApp.TILE_SIZE;
 
 public class Tetromino {
-public int x, y;
-public Color color;
-public List<TetrisPiece> pieces;
-public Tetromino(Color color, TetrisPiece... pieces) {
-	this.color=color;
-	this.pieces=new ArrayList<>(Arrays.asList(pieces));
-	
-	for(TetrisPiece piece: this.pieces)
-		piece.setParent(this);
-}
+	public int x, y;
+	public Color color;
+	public List<TetrisPiece> pieces;
 
-public void move(int dx, int dy) {
-	x+=dx;
-	y+=dy;
-	
-	pieces.forEach(p->{
-		p.x+=dx;
-		p.y+=dy;
-	});
-}
-public void move(Direction direction) {
-	move(direction.x, direction.y);
-}
-public void draw(GraphicsContext g) {
-	g.setFill(color);
-	
-	pieces.forEach(p->g.fillRect(p.x*TILE_SIZE, p.y*TILE_SIZE,TILE_SIZE,TILE_SIZE));
-}
-public void rotateBack() {
-    pieces.forEach(p -> p.setDirection(p.directions.stream().map(Direction::prev).collect(Collectors.toList()).toArray(new Direction[0])));
-}
+	public Tetromino(Color color, TetrisPiece... pieces) {
+		this.color = color;
+		this.pieces = new ArrayList<>(Arrays.asList(pieces));
 
-public void rotate() {
-    pieces.forEach(p -> p.setDirection(p.directions.stream().map(Direction::next).collect(Collectors.toList()).toArray(new Direction[0])));
-}
+		for (TetrisPiece piece : this.pieces)
+			piece.setParent(this);
+	}
 
-public void detach(int x, int y) {
-	pieces.removeIf(p->p.x==x&&p.y==y);
-}
-public Tetromino copy() {
-	return new Tetromino(color, pieces.stream()
-			.map(TetrisPiece::copy)
-			.collect(Collectors.toList())
-			.toArray(new TetrisPiece[0]));
-}
+	public void move(int dx, int dy) {
+		x += dx;
+		y += dy;
+
+		pieces.forEach(p -> {
+			p.x += dx;
+			p.y += dy;
+		});
+	}
+
+	public void move(Direction direction) {
+		move(direction.x, direction.y);
+	}
+
+	/**
+	 * Drops piece to bottom of grid
+	 */
+	public void drop() {
+		pieces.forEach(p -> {
+			p.y += 2; 
+			//supposed to drop to bottom, not move by 2
+			//whenever a piece goes inside another, the game ends
+			//fix boundary check
+		});
+		
+	}
+
+	public void draw(GraphicsContext g) {
+		g.setFill(color);
+
+		pieces.forEach(p -> g.fillRect(p.x * TILE_SIZE, p.y * TILE_SIZE, TILE_SIZE, TILE_SIZE));
+	}
+
+	public void rotateBack() {
+		pieces.forEach(p -> p.setDirection(
+				p.directions.stream().map(Direction::prev).collect(Collectors.toList()).toArray(new Direction[0])));
+	}
+
+	public void rotate() {
+		pieces.forEach(p -> p.setDirection(
+				p.directions.stream().map(Direction::next).collect(Collectors.toList()).toArray(new Direction[0])));
+	}
+
+	public void detach(int x, int y) {
+		pieces.removeIf(p -> p.x == x && p.y == y);
+	}
+
+	public Tetromino copy() {
+		return new Tetromino(color,
+				pieces.stream().map(TetrisPiece::copy).collect(Collectors.toList()).toArray(new TetrisPiece[0]));
+	}
 }

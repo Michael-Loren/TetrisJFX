@@ -1,0 +1,800 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UMLLabProfile="http:///schemas/UMLLabProfile/NS/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/UMLLabProfile/NS/0 pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile">
+  <uml:Model xmi:id="_lrrHEMsJEeydgLds2bj7pw" name="TetrisJFX2">
+    <eAnnotations xmi:id="_lv3qkMsJEeydgLds2bj7pw" source="http://ns.yatta.de/umllab">
+      <contents xmi:type="ecore:EAnnotation" xmi:id="_lv5fwMsJEeydgLds2bj7pw" source="codegen">
+        <details xmi:id="_lv5fwcsJEeydgLds2bj7pw" key="codegenDirectory" value="/TetrisJFX/src"/>
+        <details xmi:id="_ospkwMsJEeydgLds2bj7pw" key="AssociatedSourceCode" value="/TetrisJFX/src/main/Direction.java;3564613625/1;/TetrisJFX/src/main/TetrisApp.java;3401370738/1;/TetrisJFX/src/main/TetrisPiece.java;2419539691/1;/TetrisJFX/src/main/Tetromino.java;186037204/1;"/>
+      </contents>
+    </eAnnotations>
+    <elementImport xmi:id="_l1RH8MsJEeydgLds2bj7pw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+    </elementImport>
+    <elementImport xmi:id="_l1VZYMsJEeydgLds2bj7pw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+    </elementImport>
+    <elementImport xmi:id="_l1WAcMsJEeydgLds2bj7pw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+    </elementImport>
+    <elementImport xmi:id="_l1WAccsJEeydgLds2bj7pw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </elementImport>
+    <elementImport xmi:id="_l1WAcssJEeydgLds2bj7pw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+    </elementImport>
+    <elementImport xmi:id="_l1WAc8sJEeydgLds2bj7pw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </elementImport>
+    <elementImport xmi:id="_l1WAdMsJEeydgLds2bj7pw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+    </elementImport>
+    <elementImport xmi:id="_l1WAdcsJEeydgLds2bj7pw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+    </elementImport>
+    <elementImport xmi:id="_l1XOkMsJEeydgLds2bj7pw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </elementImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_l1-SkMsJEeydgLds2bj7pw" name="main">
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_l3A0YMsJEeydgLds2bj7pw" name="Direction">
+        <ownedAttribute xmi:id="_l8cG8MsJEeydgLds2bj7pw" name="x" visibility="package">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_l89EUMsJEeydgLds2bj7pw" name="y" visibility="package">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedAttribute>
+        <ownedOperation xmi:id="_l3fVgMsJEeydgLds2bj7pw" name="Direction" visibility="package" method="_l8ntIMsJEeydgLds2bj7pw">
+          <eAnnotations xmi:id="_l3hKsMsJEeydgLds2bj7pw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_l3hxwMsJEeydgLds2bj7pw" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_l3f8kMsJEeydgLds2bj7pw" name="x">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_l3f8kcsJEeydgLds2bj7pw" name="y">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_l3iY0MsJEeydgLds2bj7pw" type="_l3A0YMsJEeydgLds2bj7pw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_l3i_4MsJEeydgLds2bj7pw" name="prev" method="_l8sloMsJEeydgLds2bj7pw">
+          <ownedParameter xmi:id="_l7K7oMsJEeydgLds2bj7pw" type="_l3A0YMsJEeydgLds2bj7pw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_l3jm8MsJEeydgLds2bj7pw" name="next" method="_l8tMscsJEeydgLds2bj7pw">
+          <ownedParameter xmi:id="_l7UFkMsJEeydgLds2bj7pw" type="_l3A0YMsJEeydgLds2bj7pw" direction="return"/>
+        </ownedOperation>
+        <ownedLiteral xmi:id="_l3TvUMsJEeydgLds2bj7pw" name="UP">
+          <specification xmi:type="uml:Expression" xmi:id="_l3U9cMsJEeydgLds2bj7pw">
+            <operand xmi:type="uml:LiteralString" xmi:id="_l87PIMsJEeydgLds2bj7pw" value="0"/>
+            <operand xmi:type="uml:LiteralString" xmi:id="_l88dQMsJEeydgLds2bj7pw" value="-1"/>
+          </specification>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_l3Yn0MsJEeydgLds2bj7pw" name="RIGHT">
+          <specification xmi:type="uml:Expression" xmi:id="_l3ZO4MsJEeydgLds2bj7pw">
+            <operand xmi:type="uml:LiteralString" xmi:id="_l88dQcsJEeydgLds2bj7pw" value="1"/>
+            <operand xmi:type="uml:LiteralString" xmi:id="_l88dQssJEeydgLds2bj7pw" value="0"/>
+          </specification>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_l3ZO4csJEeydgLds2bj7pw" name="DOWN">
+          <specification xmi:type="uml:Expression" xmi:id="_l3ZO4ssJEeydgLds2bj7pw">
+            <operand xmi:type="uml:LiteralString" xmi:id="_l88dQ8sJEeydgLds2bj7pw" value="0"/>
+            <operand xmi:type="uml:LiteralString" xmi:id="_l88dRMsJEeydgLds2bj7pw" value="1"/>
+          </specification>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_l3ZO48sJEeydgLds2bj7pw" name="LEFT">
+          <specification xmi:type="uml:Expression" xmi:id="_l3ZO5MsJEeydgLds2bj7pw">
+            <operand xmi:type="uml:LiteralString" xmi:id="_l88dRcsJEeydgLds2bj7pw" value="-1"/>
+            <operand xmi:type="uml:LiteralString" xmi:id="_l88dRssJEeydgLds2bj7pw" value="0"/>
+          </specification>
+        </ownedLiteral>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_l3k1EMsJEeydgLds2bj7pw" name="TetrisApp">
+        <generalization xmi:id="_l8SV8MsJEeydgLds2bj7pw" general="_l7frwMsJEeydgLds2bj7pw"/>
+        <ownedAttribute xmi:id="_l8fxUMsJEeydgLds2bj7pw" name="TILE_SIZE" isLeaf="true" isStatic="true" isReadOnly="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_l8gYYMsJEeydgLds2bj7pw" value="40"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_l8gYYcsJEeydgLds2bj7pw" name="GRID_WIDTH" isLeaf="true" isStatic="true" isReadOnly="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_l8gYYssJEeydgLds2bj7pw" value="15"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_l8gYY8sJEeydgLds2bj7pw" name="GRID_HEIGHT" isLeaf="true" isStatic="true" isReadOnly="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_l8g_cMsJEeydgLds2bj7pw" value="20"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_l8g_ccsJEeydgLds2bj7pw" name="time" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_l8hmgMsJEeydgLds2bj7pw" name="g" visibility="private" type="_l7ivE8sJEeydgLds2bj7pw" association="_l9TpoMsJEeydgLds2bj7pw"/>
+        <ownedAttribute xmi:id="_l8hmgssJEeydgLds2bj7pw" name="grid" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_l8hmg8sJEeydgLds2bj7pw" value="*"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_l8iNkcsJEeydgLds2bj7pw" value="new int[GRID_WIDTH][GRID_HEIGHT]"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_l8i0oMsJEeydgLds2bj7pw" name="original" visibility="private" type="_l3wbQMsJEeydgLds2bj7pw" isOrdered="true" association="_l9XUAMsJEeydgLds2bj7pw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_l8i0ocsJEeydgLds2bj7pw" value="*"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_l8i0ossJEeydgLds2bj7pw" value="new ArrayList&lt;>()"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_l8i0pMsJEeydgLds2bj7pw" name="tetrominos" visibility="private" type="_l3wbQMsJEeydgLds2bj7pw" isOrdered="true" association="_l9ZJMMsJEeydgLds2bj7pw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_l8i0pcsJEeydgLds2bj7pw" value="*"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_l8jbsMsJEeydgLds2bj7pw" value="new ArrayList&lt;>()"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_l8jbsssJEeydgLds2bj7pw" name="selected" visibility="private" type="_l3wbQMsJEeydgLds2bj7pw" association="_l9aXUMsJEeydgLds2bj7pw"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_l8vB4MsJEeydgLds2bj7pw" name="createContent" specification="_l3nRUMsJEeydgLds2bj7pw">
+          <ownedParameter xmi:id="_l8vo8MsJEeydgLds2bj7pw" type="_l7g54csJEeydgLds2bj7pw" direction="return"/>
+          <language>java</language>
+          <body>Pane root = new Pane();
+     root.setPrefSize(GRID_WIDTH * TILE_SIZE, GRID_HEIGHT * TILE_SIZE);
+
+     Canvas canvas = new Canvas(GRID_WIDTH * TILE_SIZE, GRID_HEIGHT * TILE_SIZE);
+     g = canvas.getGraphicsContext2D();
+
+     root.getChildren().addAll(canvas);
+
+     original.add(new Tetromino(Color.BLUE,
+             new TetrisPiece(0, Direction.DOWN),
+             new TetrisPiece(1, Direction.LEFT),
+             new TetrisPiece(1, Direction.RIGHT),
+             new TetrisPiece(2, Direction.RIGHT)
+     ));
+     original.add(new Tetromino(Color.RED,
+             new TetrisPiece(0, Direction.DOWN),
+             new TetrisPiece(1, Direction.LEFT),
+             new TetrisPiece(1, Direction.RIGHT),
+             new TetrisPiece(1, Direction.DOWN)
+     ));
+
+     original.add(new Tetromino(Color.GREEN,
+             new TetrisPiece(0, Direction.DOWN),
+             new TetrisPiece(1, Direction.RIGHT),
+             new TetrisPiece(2, Direction.RIGHT),
+             new TetrisPiece(1, Direction.DOWN)));
+
+     original.add(new Tetromino(Color.GRAY,
+             new TetrisPiece(0, Direction.DOWN),
+             new TetrisPiece(1, Direction.RIGHT),
+             new TetrisPiece(1, Direction.RIGHT, Direction.DOWN),
+             new TetrisPiece(1, Direction.DOWN)));
+
+     spawn();
+
+     AnimationTimer timer = new AnimationTimer() {
+         @Override
+         public void handle(long now) {
+             time += 0.017;
+
+             if (time >= 0.5) {
+                 update();
+                 render();
+                 time = 0;
+             }
+         }
+     };
+     timer.start();
+
+     return root;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_l8wQAMsJEeydgLds2bj7pw" name="update" specification="_l3n4YMsJEeydgLds2bj7pw">
+          <language>java</language>
+          <body>makeMove(p -> p.move(Direction.DOWN), p -> p.move(Direction.UP), true);
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_l8wQAcsJEeydgLds2bj7pw" name="render" specification="_l3ofcMsJEeydgLds2bj7pw">
+          <language>java</language>
+          <body>g.clearRect(0, 0, GRID_WIDTH * TILE_SIZE, GRID_HEIGHT * TILE_SIZE);
+
+     tetrominos.forEach(p -> p.draw(g));
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_l8wQAssJEeydgLds2bj7pw" name="placePiece" specification="_l7o1sMsJEeydgLds2bj7pw">
+          <ownedParameter xmi:id="_l8wQA8sJEeydgLds2bj7pw" name="piece" type="_l3t_AMsJEeydgLds2bj7pw"/>
+          <language>java</language>
+          <body>grid[piece.x][piece.y]++;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_l8wQBMsJEeydgLds2bj7pw" name="removePiece" specification="_l7pcwMsJEeydgLds2bj7pw">
+          <ownedParameter xmi:id="_l8wQBcsJEeydgLds2bj7pw" name="piece" type="_l3t_AMsJEeydgLds2bj7pw"/>
+          <language>java</language>
+          <body>grid[piece.x][piece.y]--;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_l8w3EMsJEeydgLds2bj7pw" name="isOffscreen" specification="_l7qD0csJEeydgLds2bj7pw">
+          <ownedParameter xmi:id="_l8w3EcsJEeydgLds2bj7pw" name="piece" type="_l3t_AMsJEeydgLds2bj7pw"/>
+          <ownedParameter xmi:id="_l8w3EssJEeydgLds2bj7pw" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return piece.x &lt; 0 || piece.x >= GRID_WIDTH
+             || piece.y &lt; 0 || piece.y >= GRID_HEIGHT;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_l8w3E8sJEeydgLds2bj7pw" name="makeMove" specification="_l8HW0MsJEeydgLds2bj7pw">
+          <ownedParameter xmi:id="_l8w3FMsJEeydgLds2bj7pw" name="onSuccess" type="_l7nAgcsJEeydgLds2bj7pw"/>
+          <ownedParameter xmi:id="_l8w3FcsJEeydgLds2bj7pw" name="onFail" type="_l7nAgcsJEeydgLds2bj7pw"/>
+          <ownedParameter xmi:id="_l8w3FssJEeydgLds2bj7pw" name="endMove">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>selected.pieces.forEach(this::removePiece);
+
+     onSuccess.accept(selected);
+
+     boolean offscreen = selected.pieces.stream().anyMatch(this::isOffscreen);
+
+     if (!offscreen) {
+         selected.pieces.forEach(this::placePiece);
+     } else {
+         onFail.accept(selected);
+
+         selected.pieces.forEach(this::placePiece);
+
+         if (endMove) {
+             sweep();
+         }
+
+         return;
+     }
+
+     if (!isValidState()) {
+         selected.pieces.forEach(this::removePiece);
+
+         onFail.accept(selected);
+
+         selected.pieces.forEach(this::placePiece);
+
+         if (endMove) {
+             sweep();
+         }
+     }
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_l8w3F8sJEeydgLds2bj7pw" name="isValidState" specification="_l3pGgMsJEeydgLds2bj7pw">
+          <ownedParameter xmi:id="_l8w3GMsJEeydgLds2bj7pw" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>for (int y = 0; y &lt; GRID_HEIGHT; y++) {
+         for (int x = 0; x &lt; GRID_WIDTH; x++) {
+             if (grid[x][y] > 1) {
+                 return false;
+             }
+         }
+     }
+
+     return true;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_l8w3GcsJEeydgLds2bj7pw" name="sweep" specification="_l3pGgssJEeydgLds2bj7pw">
+          <language>java</language>
+          <body>List&lt;Integer> rows = sweepRows();
+     rows.forEach(row -> {
+         for (int x = 0; x &lt; GRID_WIDTH; x++) {
+             for (Tetromino tetromino : tetrominos) {
+                 tetromino.detach(x, row);
+             }
+
+             grid[x][row]--;
+         }
+     });
+
+     rows.forEach(row -> {
+         tetrominos.stream().forEach(tetromino -> {
+             tetromino.pieces.stream()
+                     .filter(piece -> piece.y &lt; row)
+                     .forEach(piece -> {
+                         removePiece(piece);
+                         piece.y++;
+                         placePiece(piece);
+                     });
+         });
+     });
+
+     spawn();
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_l8yFMMsJEeydgLds2bj7pw" name="sweepRows" specification="_l3pGg8sJEeydgLds2bj7pw">
+          <ownedParameter xmi:id="_l8yFMcsJEeydgLds2bj7pw" isOrdered="true" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_l8yFMssJEeydgLds2bj7pw" value="*"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>List&lt;Integer> rows = new ArrayList&lt;>();
+
+     outer:
+     for (int y = 0; y &lt; GRID_HEIGHT; y++) {
+         for (int x = 0; x &lt; GRID_WIDTH; x++) {
+             if (grid[x][y] != 1) {
+                 continue outer;
+             }
+         }
+
+         rows.add(y);
+     }
+
+     return rows;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_l8yFM8sJEeydgLds2bj7pw" name="spawn" specification="_l3qUoMsJEeydgLds2bj7pw">
+          <language>java</language>
+          <body>Tetromino tetromino = original.get(new Random().nextInt(original.size())).copy();
+     tetromino.move(GRID_WIDTH / 2, 0);
+
+     selected = tetromino;
+
+     tetrominos.add(tetromino);
+     tetromino.pieces.forEach(this::placePiece);
+
+     if (!isValidState()) {
+         System.out.println(&quot;Game Over&quot;);
+         System.exit(0);
+     }
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_l8ysQMsJEeydgLds2bj7pw" name="start" specification="_l8OrkcsJEeydgLds2bj7pw">
+          <ownedParameter xmi:id="_l8ysQcsJEeydgLds2bj7pw" name="stage" type="_l7kkQcsJEeydgLds2bj7pw"/>
+          <language>java</language>
+          <body>Scene scene = new Scene(createContent());
+
+     scene.setOnKeyPressed(e -> {
+         if (e.getCode() == KeyCode.SPACE) {
+             makeMove(p -> p.rotate(), p -> p.rotateBack(), false);
+         } else if (e.getCode() == KeyCode.LEFT) {
+             makeMove(p -> p.move(Direction.LEFT), p -> p.move(Direction.RIGHT), false);
+         } else if (e.getCode() == KeyCode.RIGHT) {
+             makeMove(p -> p.move(Direction.RIGHT), p -> p.move(Direction.LEFT), false);
+         } else if (e.getCode() == KeyCode.DOWN) {
+             makeMove(p -> p.move(Direction.DOWN), p -> p.move(Direction.UP), true);
+         }
+
+         render();
+     });
+
+     stage.setScene(scene);
+     stage.show();
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_l8ysQssJEeydgLds2bj7pw" name="main" specification="_l3qUocsJEeydgLds2bj7pw">
+          <ownedParameter xmi:id="_l8ysQ8sJEeydgLds2bj7pw" name="args">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_l8ysRMsJEeydgLds2bj7pw" value="*"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>launch(args);
+ </body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_l3nRUMsJEeydgLds2bj7pw" name="createContent" visibility="private" method="_l8vB4MsJEeydgLds2bj7pw">
+          <ownedParameter xmi:id="_l8GvwMsJEeydgLds2bj7pw" type="_l7g54csJEeydgLds2bj7pw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_l3n4YMsJEeydgLds2bj7pw" name="update" visibility="private" method="_l8wQAMsJEeydgLds2bj7pw"/>
+        <ownedOperation xmi:id="_l3ofcMsJEeydgLds2bj7pw" name="render" visibility="private" method="_l8wQAcsJEeydgLds2bj7pw"/>
+        <ownedOperation xmi:id="_l3pGgMsJEeydgLds2bj7pw" name="isValidState" visibility="private" method="_l8w3F8sJEeydgLds2bj7pw">
+          <ownedParameter xmi:id="_l3pGgcsJEeydgLds2bj7pw" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_l3pGgssJEeydgLds2bj7pw" name="sweep" visibility="private" method="_l8w3GcsJEeydgLds2bj7pw"/>
+        <ownedOperation xmi:id="_l3pGg8sJEeydgLds2bj7pw" name="sweepRows" visibility="private" method="_l8yFMMsJEeydgLds2bj7pw">
+          <ownedParameter xmi:id="_l3pGhMsJEeydgLds2bj7pw" isOrdered="true" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_l3pGhcsJEeydgLds2bj7pw" value="*"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_l3qUoMsJEeydgLds2bj7pw" name="spawn" visibility="private" method="_l8yFM8sJEeydgLds2bj7pw"/>
+        <ownedOperation xmi:id="_l3qUocsJEeydgLds2bj7pw" name="main" isStatic="true" method="_l8ysQssJEeydgLds2bj7pw">
+          <ownedParameter xmi:id="_l3qUossJEeydgLds2bj7pw" name="args">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_l3q7sMsJEeydgLds2bj7pw" value="*"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_l7o1sMsJEeydgLds2bj7pw" name="placePiece" visibility="private" method="_l8wQAssJEeydgLds2bj7pw">
+          <ownedParameter xmi:id="_l7o1scsJEeydgLds2bj7pw" name="piece" type="_l3t_AMsJEeydgLds2bj7pw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_l7pcwMsJEeydgLds2bj7pw" name="removePiece" visibility="private" method="_l8wQBMsJEeydgLds2bj7pw">
+          <ownedParameter xmi:id="_l7qD0MsJEeydgLds2bj7pw" name="piece" type="_l3t_AMsJEeydgLds2bj7pw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_l7qD0csJEeydgLds2bj7pw" name="isOffscreen" visibility="private" method="_l8w3EMsJEeydgLds2bj7pw">
+          <ownedParameter xmi:id="_l7qD0ssJEeydgLds2bj7pw" name="piece" type="_l3t_AMsJEeydgLds2bj7pw"/>
+          <ownedParameter xmi:id="_l7qD08sJEeydgLds2bj7pw" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_l8HW0MsJEeydgLds2bj7pw" name="makeMove" visibility="private" method="_l8w3E8sJEeydgLds2bj7pw">
+          <ownedParameter xmi:id="_l8HW0csJEeydgLds2bj7pw" name="onSuccess" type="_l7nAgcsJEeydgLds2bj7pw"/>
+          <ownedParameter xmi:id="_l8HW0ssJEeydgLds2bj7pw" name="onFail" type="_l7nAgcsJEeydgLds2bj7pw"/>
+          <ownedParameter xmi:id="_l8H94MsJEeydgLds2bj7pw" name="endMove">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_l8OrkcsJEeydgLds2bj7pw" name="start" method="_l8ysQMsJEeydgLds2bj7pw" raisedException="_l8OEgcsJEeydgLds2bj7pw">
+          <ownedParameter xmi:id="_l8OrkssJEeydgLds2bj7pw" name="stage" type="_l7kkQcsJEeydgLds2bj7pw"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_l3t_AMsJEeydgLds2bj7pw" name="TetrisPiece">
+        <ownedAttribute xmi:id="_l8jbtMsJEeydgLds2bj7pw" name="distance">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_l8kCwcsJEeydgLds2bj7pw" name="directions" type="_l3A0YMsJEeydgLds2bj7pw" isOrdered="true">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_l8kCwssJEeydgLds2bj7pw" value="*"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_l8kp0csJEeydgLds2bj7pw" name="parent" type="_l3wbQMsJEeydgLds2bj7pw" association="_l9a-YcsJEeydgLds2bj7pw"/>
+        <ownedAttribute xmi:id="_l8kp08sJEeydgLds2bj7pw" name="x">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_l8_gkMsJEeydgLds2bj7pw" name="y">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedAttribute>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_l81vkMsJEeydgLds2bj7pw" name="TetrisPiece" specification="_l7wxgMsJEeydgLds2bj7pw">
+          <ownedParameter xmi:id="_l81vkcsJEeydgLds2bj7pw" name="distance">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_l81vkssJEeydgLds2bj7pw" name="direction" type="_l3A0YMsJEeydgLds2bj7pw">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_l81vk8sJEeydgLds2bj7pw" value="*"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_l81vlMsJEeydgLds2bj7pw" type="_l3t_AMsJEeydgLds2bj7pw" direction="return"/>
+          <language>java</language>
+          <body>this.distance = distance;
+     this.directions = Arrays.asList(direction);
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_l81vlcsJEeydgLds2bj7pw" name="setParent" specification="_l71C8MsJEeydgLds2bj7pw">
+          <ownedParameter xmi:id="_l81vlssJEeydgLds2bj7pw" name="parent" type="_l3wbQMsJEeydgLds2bj7pw"/>
+          <language>java</language>
+          <body>this.parent = parent;
+
+     int dx = 0, dy = 0;
+
+     for (Direction d : directions) {
+         dx += distance * d.x;
+         dy += distance * d.y;
+     }
+
+     x = parent.x + dx;
+     y = parent.y + dy;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_l82WoMsJEeydgLds2bj7pw" name="setDirection" specification="_l72REMsJEeydgLds2bj7pw">
+          <ownedParameter xmi:id="_l82WocsJEeydgLds2bj7pw" name="direction" type="_l3A0YMsJEeydgLds2bj7pw">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_l82WossJEeydgLds2bj7pw" value="*"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>this.directions = Arrays.asList(direction);
+
+     int dx = 0, dy = 0;
+
+     for (Direction d : directions) {
+         dx += distance * d.x;
+         dy += distance * d.y;
+     }
+
+     x = parent.x + dx;
+     y = parent.y + dy;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_l82Wo8sJEeydgLds2bj7pw" name="copy" specification="_l3umEMsJEeydgLds2bj7pw">
+          <ownedParameter xmi:id="_l82WpMsJEeydgLds2bj7pw" type="_l3t_AMsJEeydgLds2bj7pw" direction="return"/>
+          <language>java</language>
+          <body>return new TetrisPiece(distance, directions.toArray(new Direction[0]));
+ </body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_l3umEMsJEeydgLds2bj7pw" name="copy" method="_l82Wo8sJEeydgLds2bj7pw">
+          <ownedParameter xmi:id="_l74GQMsJEeydgLds2bj7pw" type="_l3t_AMsJEeydgLds2bj7pw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_l7wxgMsJEeydgLds2bj7pw" name="TetrisPiece" method="_l81vkMsJEeydgLds2bj7pw">
+          <eAnnotations xmi:id="_l7x_oMsJEeydgLds2bj7pw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_l7ymsMsJEeydgLds2bj7pw" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_l7xYkMsJEeydgLds2bj7pw" name="distance">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_l7xYkcsJEeydgLds2bj7pw" name="direction" type="_l3A0YMsJEeydgLds2bj7pw">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_l7zNwcsJEeydgLds2bj7pw" value="*"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_l7zNwMsJEeydgLds2bj7pw" type="_l3t_AMsJEeydgLds2bj7pw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_l71C8MsJEeydgLds2bj7pw" name="setParent" method="_l81vlcsJEeydgLds2bj7pw">
+          <ownedParameter xmi:id="_l71qAMsJEeydgLds2bj7pw" name="parent" type="_l3wbQMsJEeydgLds2bj7pw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_l72REMsJEeydgLds2bj7pw" name="setDirection" method="_l82WoMsJEeydgLds2bj7pw">
+          <ownedParameter xmi:id="_l72REcsJEeydgLds2bj7pw" name="direction" type="_l3A0YMsJEeydgLds2bj7pw">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_l73fMcsJEeydgLds2bj7pw" value="*"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_l3wbQMsJEeydgLds2bj7pw" name="Tetromino">
+        <ownedAttribute xmi:id="_l8lQ4MsJEeydgLds2bj7pw" name="x">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_l8lQ48sJEeydgLds2bj7pw" name="color" type="_l7j9M8sJEeydgLds2bj7pw" association="_l9blccsJEeydgLds2bj7pw"/>
+        <ownedAttribute xmi:id="_l8l38csJEeydgLds2bj7pw" name="pieces" type="_l3t_AMsJEeydgLds2bj7pw" isOrdered="true" association="_l9bldMsJEeydgLds2bj7pw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_l8l38ssJEeydgLds2bj7pw" value="*"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_l9AusMsJEeydgLds2bj7pw" name="y">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedAttribute>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_l829sMsJEeydgLds2bj7pw" name="Tetromino" specification="_l8XOcMsJEeydgLds2bj7pw">
+          <ownedParameter xmi:id="_l829scsJEeydgLds2bj7pw" name="color" type="_l7j9M8sJEeydgLds2bj7pw"/>
+          <ownedParameter xmi:id="_l829sssJEeydgLds2bj7pw" name="pieces" type="_l3t_AMsJEeydgLds2bj7pw">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_l829s8sJEeydgLds2bj7pw" value="*"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_l829tMsJEeydgLds2bj7pw" type="_l3wbQMsJEeydgLds2bj7pw" direction="return"/>
+          <language>java</language>
+          <body>this.color=color;
+	this.pieces=new ArrayList&lt;>(Arrays.asList(pieces));
+	
+	for(TetrisPiece piece: this.pieces)
+		piece.setParent(this);
+</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_l83kwMsJEeydgLds2bj7pw" name="move" specification="_l3xpYMsJEeydgLds2bj7pw">
+          <ownedParameter xmi:id="_l83kwcsJEeydgLds2bj7pw" name="dx">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_l83kwssJEeydgLds2bj7pw" name="dy">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>x+=dx;
+	y+=dy;
+	
+	pieces.forEach(p->{
+		p.x+=dx;
+		p.y+=dy;
+	});
+</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_l83kw8sJEeydgLds2bj7pw" name="move" specification="_l8ApIMsJEeydgLds2bj7pw">
+          <ownedParameter xmi:id="_l83kxMsJEeydgLds2bj7pw" name="direction" type="_l3A0YMsJEeydgLds2bj7pw"/>
+          <language>java</language>
+          <body>move(direction.x, direction.y);
+</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_l84L0MsJEeydgLds2bj7pw" name="draw" specification="_l8aRwcsJEeydgLds2bj7pw">
+          <ownedParameter xmi:id="_l84L0csJEeydgLds2bj7pw" name="g" type="_l7ivE8sJEeydgLds2bj7pw"/>
+          <language>java</language>
+          <body>g.setFill(color);
+	
+	pieces.forEach(p->g.fillRect(p.x*TILE_SIZE, p.y*TILE_SIZE,TILE_SIZE,TILE_SIZE));
+</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_l84L0ssJEeydgLds2bj7pw" name="rotateBack" specification="_l3yQcMsJEeydgLds2bj7pw">
+          <language>java</language>
+          <body>pieces.forEach(p -> p.setDirection(p.directions.stream().map(Direction::prev).collect(Collectors.toList()).toArray(new Direction[0])));
+</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_l84L08sJEeydgLds2bj7pw" name="rotate" specification="_l3yQccsJEeydgLds2bj7pw">
+          <language>java</language>
+          <body>pieces.forEach(p -> p.setDirection(p.directions.stream().map(Direction::next).collect(Collectors.toList()).toArray(new Direction[0])));
+</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_l84L1MsJEeydgLds2bj7pw" name="detach" specification="_l3yQcssJEeydgLds2bj7pw">
+          <ownedParameter xmi:id="_l84L1csJEeydgLds2bj7pw" name="x">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_l84L1ssJEeydgLds2bj7pw" name="y">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>pieces.removeIf(p->p.x==x&amp;&amp;p.y==y);
+</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_l84L18sJEeydgLds2bj7pw" name="copy" specification="_l3yQdcsJEeydgLds2bj7pw">
+          <ownedParameter xmi:id="_l84y4MsJEeydgLds2bj7pw" type="_l3wbQMsJEeydgLds2bj7pw" direction="return"/>
+          <language>java</language>
+          <body>return new Tetromino(color, pieces.stream()
+			.map(TetrisPiece::copy)
+			.collect(Collectors.toList())
+			.toArray(new TetrisPiece[0]));
+</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_l3xpYMsJEeydgLds2bj7pw" name="move" method="_l83kwMsJEeydgLds2bj7pw">
+          <ownedParameter xmi:id="_l3xpYcsJEeydgLds2bj7pw" name="dx">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_l3xpYssJEeydgLds2bj7pw" name="dy">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_l3yQcMsJEeydgLds2bj7pw" name="rotateBack" method="_l84L0ssJEeydgLds2bj7pw"/>
+        <ownedOperation xmi:id="_l3yQccsJEeydgLds2bj7pw" name="rotate" method="_l84L08sJEeydgLds2bj7pw"/>
+        <ownedOperation xmi:id="_l3yQcssJEeydgLds2bj7pw" name="detach" method="_l84L1MsJEeydgLds2bj7pw">
+          <ownedParameter xmi:id="_l3yQc8sJEeydgLds2bj7pw" name="x">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_l3yQdMsJEeydgLds2bj7pw" name="y">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_l3yQdcsJEeydgLds2bj7pw" name="copy" method="_l84L18sJEeydgLds2bj7pw">
+          <ownedParameter xmi:id="_l8CeUMsJEeydgLds2bj7pw" type="_l3wbQMsJEeydgLds2bj7pw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_l8ApIMsJEeydgLds2bj7pw" name="move" method="_l83kw8sJEeydgLds2bj7pw">
+          <ownedParameter xmi:id="_l8B3QMsJEeydgLds2bj7pw" name="direction" type="_l3A0YMsJEeydgLds2bj7pw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_l8XOcMsJEeydgLds2bj7pw" name="Tetromino" method="_l829sMsJEeydgLds2bj7pw">
+          <eAnnotations xmi:id="_l8XOc8sJEeydgLds2bj7pw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_l8X1gMsJEeydgLds2bj7pw" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_l8XOccsJEeydgLds2bj7pw" name="color" type="_l7j9M8sJEeydgLds2bj7pw"/>
+          <ownedParameter xmi:id="_l8XOcssJEeydgLds2bj7pw" name="pieces" type="_l3t_AMsJEeydgLds2bj7pw">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_l8ZqscsJEeydgLds2bj7pw" value="*"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_l8ZqsMsJEeydgLds2bj7pw" type="_l3wbQMsJEeydgLds2bj7pw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_l8aRwcsJEeydgLds2bj7pw" name="draw" method="_l84L0MsJEeydgLds2bj7pw">
+          <ownedParameter xmi:id="_l8a40MsJEeydgLds2bj7pw" name="g" type="_l7ivE8sJEeydgLds2bj7pw"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_l9TpoMsJEeydgLds2bj7pw" name="" memberEnd="_l9TpocsJEeydgLds2bj7pw _l8hmgMsJEeydgLds2bj7pw">
+        <ownedEnd xmi:id="_l9TpocsJEeydgLds2bj7pw" name="" type="_l3k1EMsJEeydgLds2bj7pw" association="_l9TpoMsJEeydgLds2bj7pw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_l9XUAMsJEeydgLds2bj7pw" name="" memberEnd="_l9X7EMsJEeydgLds2bj7pw _l8i0oMsJEeydgLds2bj7pw">
+        <ownedEnd xmi:id="_l9X7EMsJEeydgLds2bj7pw" name="" type="_l3k1EMsJEeydgLds2bj7pw" association="_l9XUAMsJEeydgLds2bj7pw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_l9ZJMMsJEeydgLds2bj7pw" name="" memberEnd="_l9ZJMcsJEeydgLds2bj7pw _l8i0pMsJEeydgLds2bj7pw">
+        <ownedEnd xmi:id="_l9ZJMcsJEeydgLds2bj7pw" name="" type="_l3k1EMsJEeydgLds2bj7pw" association="_l9ZJMMsJEeydgLds2bj7pw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_l9aXUMsJEeydgLds2bj7pw" name="" memberEnd="_l9aXUcsJEeydgLds2bj7pw _l8jbsssJEeydgLds2bj7pw">
+        <ownedEnd xmi:id="_l9aXUcsJEeydgLds2bj7pw" name="" type="_l3k1EMsJEeydgLds2bj7pw" association="_l9aXUMsJEeydgLds2bj7pw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_l9a-YcsJEeydgLds2bj7pw" name="" memberEnd="_l9a-YssJEeydgLds2bj7pw _l8kp0csJEeydgLds2bj7pw">
+        <ownedEnd xmi:id="_l9a-YssJEeydgLds2bj7pw" name="" type="_l3t_AMsJEeydgLds2bj7pw" association="_l9a-YcsJEeydgLds2bj7pw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_l9blccsJEeydgLds2bj7pw" name="" memberEnd="_l9blcssJEeydgLds2bj7pw _l8lQ48sJEeydgLds2bj7pw">
+        <ownedEnd xmi:id="_l9blcssJEeydgLds2bj7pw" name="" type="_l3wbQMsJEeydgLds2bj7pw" association="_l9blccsJEeydgLds2bj7pw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_l9bldMsJEeydgLds2bj7pw" name="" memberEnd="_l9bldcsJEeydgLds2bj7pw _l8l38csJEeydgLds2bj7pw">
+        <ownedEnd xmi:id="_l9bldcsJEeydgLds2bj7pw" name="" type="_l3wbQMsJEeydgLds2bj7pw" association="_l9bldMsJEeydgLds2bj7pw"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_l2AHwMsJEeydgLds2bj7pw" name="javafx">
+      <packagedElement xmi:type="uml:Package" xmi:id="_l2BV4MsJEeydgLds2bj7pw" name="animation">
+        <packagedElement xmi:type="uml:Class" xmi:id="_l7azQMsJEeydgLds2bj7pw" name="AnimationTimer"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_l2B88MsJEeydgLds2bj7pw" name="application">
+        <packagedElement xmi:type="uml:Class" xmi:id="_l7frwMsJEeydgLds2bj7pw" name="Application"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_l2DyIMsJEeydgLds2bj7pw" name="scene">
+        <packagedElement xmi:type="uml:Package" xmi:id="_l2EZMMsJEeydgLds2bj7pw" name="canvas">
+          <packagedElement xmi:type="uml:Class" xmi:id="_l7ivEcsJEeydgLds2bj7pw" name="Canvas"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_l7ivE8sJEeydgLds2bj7pw" name="GraphicsContext"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_l2EZMcsJEeydgLds2bj7pw" name="input">
+          <packagedElement xmi:type="uml:Enumeration" xmi:id="_l7jWIMsJEeydgLds2bj7pw" name="KeyCode"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_l2EZMssJEeydgLds2bj7pw" name="layout">
+          <packagedElement xmi:type="uml:Class" xmi:id="_l7j9McsJEeydgLds2bj7pw" name="Pane"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_l2EZM8sJEeydgLds2bj7pw" name="paint">
+          <packagedElement xmi:type="uml:Class" xmi:id="_l7j9M8sJEeydgLds2bj7pw" name="Color"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_l7g54csJEeydgLds2bj7pw" name="Parent"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_l7iIAMsJEeydgLds2bj7pw" name="Scene"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_l2EZNMsJEeydgLds2bj7pw" name="stage">
+        <packagedElement xmi:type="uml:Class" xmi:id="_l7kkQcsJEeydgLds2bj7pw" name="Stage"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_l2EZNcsJEeydgLds2bj7pw" name="java">
+      <packagedElement xmi:type="uml:Package" xmi:id="_l2EZNssJEeydgLds2bj7pw" name="util">
+        <packagedElement xmi:type="uml:Package" xmi:id="_l2FAQMsJEeydgLds2bj7pw" name="function">
+          <packagedElement xmi:type="uml:Interface" xmi:id="_l7nAgcsJEeydgLds2bj7pw" name="Consumer"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_l2TCsMsJEeydgLds2bj7pw" name="stream">
+          <packagedElement xmi:type="uml:Class" xmi:id="_l74tUMsJEeydgLds2bj7pw" name="Collectors"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_l7lyYcsJEeydgLds2bj7pw" name="ArrayList"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_l7mZcMsJEeydgLds2bj7pw" name="List"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_l7mZcssJEeydgLds2bj7pw" name="Random"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_l7tuMMsJEeydgLds2bj7pw" name="Arrays"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_l8OEgMsJEeydgLds2bj7pw" name="lang">
+        <packagedElement xmi:type="uml:Class" xmi:id="_l8OEgcsJEeydgLds2bj7pw" name="Exception"/>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:id="_lv78AMsJEeydgLds2bj7pw">
+      <eAnnotations xmi:id="_lv9KIMsJEeydgLds2bj7pw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile"/>
+    </profileApplication>
+  </uml:Model>
+  <UMLLabProfile:TargetLanguage xmi:id="_lwBbkMsJEeydgLds2bj7pw" base_Package="_lrrHEMsJEeydgLds2bj7pw">
+    <languageName>java</languageName>
+  </UMLLabProfile:TargetLanguage>
+  <UMLLabProfile:Reference xmi:id="_l7cocMsJEeydgLds2bj7pw" base_Element="_l7azQMsJEeydgLds2bj7pw"/>
+  <UMLLabProfile:Reference xmi:id="_l7g54MsJEeydgLds2bj7pw" base_Element="_l7frwMsJEeydgLds2bj7pw"/>
+  <UMLLabProfile:Reference xmi:id="_l7hg8MsJEeydgLds2bj7pw" base_Element="_l7g54csJEeydgLds2bj7pw"/>
+  <UMLLabProfile:Reference xmi:id="_l7ivEMsJEeydgLds2bj7pw" base_Element="_l7iIAMsJEeydgLds2bj7pw"/>
+  <UMLLabProfile:Reference xmi:id="_l7ivEssJEeydgLds2bj7pw" base_Element="_l7ivEcsJEeydgLds2bj7pw"/>
+  <UMLLabProfile:Reference xmi:id="_l7ivFMsJEeydgLds2bj7pw" base_Element="_l7ivE8sJEeydgLds2bj7pw"/>
+  <UMLLabProfile:Reference xmi:id="_l7j9MMsJEeydgLds2bj7pw" base_Element="_l7jWIMsJEeydgLds2bj7pw"/>
+  <UMLLabProfile:Reference xmi:id="_l7j9MssJEeydgLds2bj7pw" base_Element="_l7j9McsJEeydgLds2bj7pw"/>
+  <UMLLabProfile:Reference xmi:id="_l7kkQMsJEeydgLds2bj7pw" base_Element="_l7j9M8sJEeydgLds2bj7pw"/>
+  <UMLLabProfile:Reference xmi:id="_l7lyYMsJEeydgLds2bj7pw" base_Element="_l7kkQcsJEeydgLds2bj7pw"/>
+  <UMLLabProfile:Reference xmi:id="_l7lyYssJEeydgLds2bj7pw" base_Element="_l7lyYcsJEeydgLds2bj7pw"/>
+  <UMLLabProfile:Reference xmi:id="_l7mZccsJEeydgLds2bj7pw" base_Element="_l7mZcMsJEeydgLds2bj7pw"/>
+  <UMLLabProfile:Reference xmi:id="_l7nAgMsJEeydgLds2bj7pw" base_Element="_l7mZcssJEeydgLds2bj7pw"/>
+  <UMLLabProfile:Reference xmi:id="_l7nAgssJEeydgLds2bj7pw" base_Element="_l7nAgcsJEeydgLds2bj7pw"/>
+  <UMLLabProfile:Reference xmi:id="_l7vjYMsJEeydgLds2bj7pw" base_Element="_l7tuMMsJEeydgLds2bj7pw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_l7ymscsJEeydgLds2bj7pw" base_Element="_l7wxgMsJEeydgLds2bj7pw"/>
+  <UMLLabProfile:Array xmi:id="_l70b4MsJEeydgLds2bj7pw" base_Element="_l7xYkcsJEeydgLds2bj7pw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_l73fMMsJEeydgLds2bj7pw" base_Element="_l72REMsJEeydgLds2bj7pw"/>
+  <UMLLabProfile:Array xmi:id="_l73fMssJEeydgLds2bj7pw" base_Element="_l72REcsJEeydgLds2bj7pw"/>
+  <UMLLabProfile:Reference xmi:id="_l75UYMsJEeydgLds2bj7pw" base_Element="_l74tUMsJEeydgLds2bj7pw"/>
+  <UMLLabProfile:Generics xmi:id="_l8LoQMsJEeydgLds2bj7pw" genericsValue="Tetromino" base_Element="_l8HW0csJEeydgLds2bj7pw"/>
+  <UMLLabProfile:Generics xmi:id="_l8M2YMsJEeydgLds2bj7pw" genericsValue="Tetromino" base_Element="_l8HW0ssJEeydgLds2bj7pw"/>
+  <UMLLabProfile:Reference xmi:id="_l8OrkMsJEeydgLds2bj7pw" base_Element="_l8OEgcsJEeydgLds2bj7pw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_l8PSoMsJEeydgLds2bj7pw" base_Element="_l8OrkcsJEeydgLds2bj7pw"/>
+  <UMLLabProfile:Annotations xmi:id="_l8QgwMsJEeydgLds2bj7pw" base_Element="_l8OrkcsJEeydgLds2bj7pw">
+    <annotations xmi:id="_l8Ru4MsJEeydgLds2bj7pw" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_l8ZDoMsJEeydgLds2bj7pw" base_Element="_l8XOcMsJEeydgLds2bj7pw"/>
+  <UMLLabProfile:Array xmi:id="_l8aRwMsJEeydgLds2bj7pw" base_Element="_l8XOcssJEeydgLds2bj7pw"/>
+  <UMLLabProfile:MultiDeclaration xmi:id="_l8dVEMsJEeydgLds2bj7pw" base_Property="_l8cG8MsJEeydgLds2bj7pw" siblings="_l89EUMsJEeydgLds2bj7pw" root="true"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_l8d8IMsJEeydgLds2bj7pw" base_Element="_l8cG8MsJEeydgLds2bj7pw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_l8g_cssJEeydgLds2bj7pw" base_Element="_l8g_ccsJEeydgLds2bj7pw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_l8hmgcsJEeydgLds2bj7pw" base_Element="_l8hmgMsJEeydgLds2bj7pw"/>
+  <UMLLabProfile:Array xmi:id="_l8iNkMsJEeydgLds2bj7pw" dimensions="2" base_Element="_l8hmgssJEeydgLds2bj7pw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_l8iNkssJEeydgLds2bj7pw" base_Element="_l8hmgssJEeydgLds2bj7pw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_l8i0o8sJEeydgLds2bj7pw" base_Element="_l8i0oMsJEeydgLds2bj7pw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_l8jbscsJEeydgLds2bj7pw" base_Element="_l8i0pMsJEeydgLds2bj7pw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_l8jbs8sJEeydgLds2bj7pw" base_Element="_l8jbsssJEeydgLds2bj7pw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_l8kCwMsJEeydgLds2bj7pw" base_Element="_l8jbtMsJEeydgLds2bj7pw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_l8kp0MsJEeydgLds2bj7pw" base_Element="_l8kCwcsJEeydgLds2bj7pw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_l8kp0ssJEeydgLds2bj7pw" base_Element="_l8kp0csJEeydgLds2bj7pw"/>
+  <UMLLabProfile:MultiDeclaration xmi:id="_l8kp1MsJEeydgLds2bj7pw" base_Property="_l8kp08sJEeydgLds2bj7pw" siblings="_l8_gkMsJEeydgLds2bj7pw" root="true"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_l8kp1csJEeydgLds2bj7pw" base_Element="_l8kp08sJEeydgLds2bj7pw"/>
+  <UMLLabProfile:MultiDeclaration xmi:id="_l8lQ4csJEeydgLds2bj7pw" base_Property="_l8lQ4MsJEeydgLds2bj7pw" siblings="_l9AusMsJEeydgLds2bj7pw" root="true"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_l8lQ4ssJEeydgLds2bj7pw" base_Element="_l8lQ4MsJEeydgLds2bj7pw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_l8l38MsJEeydgLds2bj7pw" base_Element="_l8lQ48sJEeydgLds2bj7pw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_l8l388sJEeydgLds2bj7pw" base_Element="_l8l38csJEeydgLds2bj7pw"/>
+  <uml:OpaqueBehavior xmi:id="_l8ntIMsJEeydgLds2bj7pw" name="Direction" specification="_l3fVgMsJEeydgLds2bj7pw">
+    <ownedParameter xmi:id="_l8qwcMsJEeydgLds2bj7pw" name="x">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </ownedParameter>
+    <ownedParameter xmi:id="_l8rXgMsJEeydgLds2bj7pw" name="y">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </ownedParameter>
+    <ownedParameter xmi:id="_l8rXgcsJEeydgLds2bj7pw" type="_l3A0YMsJEeydgLds2bj7pw" direction="return"/>
+    <language>java</language>
+    <body>this.x = x;
+     this.y = y;
+ </body>
+  </uml:OpaqueBehavior>
+  <uml:OpaqueBehavior xmi:id="_l8sloMsJEeydgLds2bj7pw" name="prev" specification="_l3i_4MsJEeydgLds2bj7pw">
+    <ownedParameter xmi:id="_l8tMsMsJEeydgLds2bj7pw" type="_l3A0YMsJEeydgLds2bj7pw" direction="return"/>
+    <language>java</language>
+    <body>int nextIndex = ordinal() - 1;
+
+     if (nextIndex == -1) {
+         nextIndex = Direction.values().length - 1;
+     }
+
+     return Direction.values()[nextIndex];
+ </body>
+  </uml:OpaqueBehavior>
+  <uml:OpaqueBehavior xmi:id="_l8tMscsJEeydgLds2bj7pw" name="next" specification="_l3jm8MsJEeydgLds2bj7pw">
+    <ownedParameter xmi:id="_l8tzwMsJEeydgLds2bj7pw" type="_l3A0YMsJEeydgLds2bj7pw" direction="return"/>
+    <language>java</language>
+    <body>int nextIndex = ordinal() + 1;
+
+     if (nextIndex == Direction.values().length) {
+         nextIndex = 0;
+     }
+
+     return Direction.values()[nextIndex];
+ </body>
+  </uml:OpaqueBehavior>
+  <UMLLabProfile:MultiDeclaration xmi:id="_l89rYMsJEeydgLds2bj7pw" base_Property="_l89EUMsJEeydgLds2bj7pw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_l8-ScMsJEeydgLds2bj7pw" base_Element="_l89EUMsJEeydgLds2bj7pw"/>
+  <UMLLabProfile:MultiDeclaration xmi:id="_l8_gkcsJEeydgLds2bj7pw" base_Property="_l8_gkMsJEeydgLds2bj7pw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_l9AHoMsJEeydgLds2bj7pw" base_Element="_l8_gkMsJEeydgLds2bj7pw"/>
+  <UMLLabProfile:MultiDeclaration xmi:id="_l9BVwMsJEeydgLds2bj7pw" base_Property="_l9AusMsJEeydgLds2bj7pw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_l9B80MsJEeydgLds2bj7pw" base_Element="_l9AusMsJEeydgLds2bj7pw"/>
+  <UMLLabProfile:Reference xmi:id="_l9Ws8MsJEeydgLds2bj7pw" base_Element="_l9TpoMsJEeydgLds2bj7pw"/>
+  <UMLLabProfile:Reference xmi:id="_l9YiIMsJEeydgLds2bj7pw" base_Element="_l9XUAMsJEeydgLds2bj7pw"/>
+  <UMLLabProfile:Reference xmi:id="_l9ZJMssJEeydgLds2bj7pw" base_Element="_l9ZJMMsJEeydgLds2bj7pw"/>
+  <UMLLabProfile:Reference xmi:id="_l9a-YMsJEeydgLds2bj7pw" base_Element="_l9aXUMsJEeydgLds2bj7pw"/>
+  <UMLLabProfile:Reference xmi:id="_l9blcMsJEeydgLds2bj7pw" base_Element="_l9a-YcsJEeydgLds2bj7pw"/>
+  <UMLLabProfile:Reference xmi:id="_l9blc8sJEeydgLds2bj7pw" base_Element="_l9blccsJEeydgLds2bj7pw"/>
+  <UMLLabProfile:Reference xmi:id="_l9bldssJEeydgLds2bj7pw" base_Element="_l9bldMsJEeydgLds2bj7pw"/>
+  <UMLLabProfile:Patch xmi:id="_otCmUMsJEeydgLds2bj7pw" base_Element="_l3A0YMsJEeydgLds2bj7pw" patchText="@@ -96,16 +96,28 @@&#xA; (-1, 0);&#xA;+%0A%0A%09int x, y;&#xA; %0A%09%0A    D&#xA;" conflicting="false"/>
+</xmi:XMI>
