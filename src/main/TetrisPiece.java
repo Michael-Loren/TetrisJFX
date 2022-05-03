@@ -6,6 +6,11 @@ public Direction direction;
 public Tetromino parent;
 public int x,y;
 
+public TetrisPiece(int distance, Direction direction) {
+	this.distance=distance;
+	this.direction=direction;
+}
+
 public void setParent(Tetromino parent) {
 	this.parent=parent;
 	x=parent.x+distance*direction.x;
@@ -18,13 +23,8 @@ public void setDirection(Direction direction) {
 	y=parent.y+distance*direction.y;
 }
 
-public TetrisPiece(int distance, Direction direction) {
-	this.distance=distance;
-	this.direction=direction;
-}
-
 public TetrisPiece copy() {
-	return new TetrisPiece(distance, direction)
+	return new TetrisPiece(distance, direction);
 }
 
 }

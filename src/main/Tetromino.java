@@ -8,15 +8,17 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
+
+
 public class Tetromino {
 public int x, y;
 public Color color;
-public List<Piece> pieces;
-public Tetromino(Color color, Piece... pieces) {
+public List<TetrisPiece> pieces;
+public Tetromino(Color color, TetrisPiece... pieces) {
 	this.color=color;
 	this.pieces=new ArrayList<>(Arrays.asList(pieces));
 	
-	for(Piece piece: this.pieces)
+	for(TetrisPiece piece: this.pieces)
 		piece.setParent(this);
 }
 
@@ -38,11 +40,9 @@ public void draw(GraphicsContext g) {
 	pieces.forEach(p->g.fillRect(p.x*TILE_SIZE, p.y*TILE_SIZE,TILE_SIZE,TILE_SIZE));
 }
 public void rotateBack() {
-	System.out.println("Rotate back");
 	pieces.forEach(p->p.setDirection(p.direction.prev()));
 }
 public void rotate() {
-	System.out.println("Rotate");
 	pieces.forEach(p->p.setDirection(p.direction.next()));
 }
 public void detach(int x, int y) {
@@ -50,8 +50,8 @@ public void detach(int x, int y) {
 }
 public Tetromino copy() {
 	return new Tetromino(color, pieces.stream()
-			.map(Piece::copy)
+			.map(TetrisPiece::copy)
 			.collect(Collectors.toList())
-			.toArray(new Piece[0]));
+			.toArray(new TetrisPiece[0]));
 }
 }
