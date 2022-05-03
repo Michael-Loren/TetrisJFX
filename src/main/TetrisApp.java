@@ -232,7 +232,11 @@ public class TetrisApp extends Application {
         	case DOWN:
         		makeMove(p -> p.move(Direction.DOWN), p -> p.move(Direction.UP), true);
         		break;
+        	case SPACE:
+        		makeMove(p -> p.drop(), p -> p.drop(), true);
+        		break;
         	}
+        	
         	 render();
            
         });
