@@ -15,14 +15,26 @@ public class Tetromino {
 	public Color color;
 	public List<TetrisPiece> pieces;
 
+	
+	/**
+	 * Creates a Tetromino using multiple TetrisPiece instances
+	 * @param color 
+	 * @param pieces
+	 */
 	public Tetromino(Color color, TetrisPiece... pieces) {
 		this.color = color;
 		this.pieces = new ArrayList<>(Arrays.asList(pieces));
-
-		for (TetrisPiece piece : this.pieces)
+		
+		//sets all of the pieces given to this current Tetromino
+		for (TetrisPiece piece : this.pieces) 
 			piece.setParent(this);
 	}
 
+	/**
+	 * 
+	 * @param dx
+	 * @param dy
+	 */
 	public void move(int dx, int dy) {
 		x += dx;
 		y += dy;
