@@ -27,6 +27,9 @@ public class TetrisApp extends Application {
     private GraphicsContext g;
 
     private int[][] grid = new int[GRID_WIDTH][GRID_HEIGHT];
+    /**
+     * 
+     */
 
     private List<Tetromino> original = new ArrayList<>();
     private List<Tetromino> tetrominos = new ArrayList<>();
