@@ -31,9 +31,7 @@ public class Tetromino {
 	}
 
 	/**
-	 * 
-	 * @param dx
-	 * @param dy
+	 * Physically move the Tetromino across the board
 	 */
 	public void move(int dx, int dy) {
 		x += dx;
@@ -44,7 +42,9 @@ public class Tetromino {
 			p.y += dy;
 		});
 	}
-
+	/**
+	 * Physically move the Tetromino across the board
+	 */
 	public void move(Direction direction) {
 		move(direction.x, direction.y);
 	}
@@ -62,6 +62,11 @@ public class Tetromino {
 		
 	}
 
+	
+	/**
+	 * Draw Tetromino
+	 * @param g
+	 */
 	public void draw(GraphicsContext g) {
 		g.setFill(color);
 
