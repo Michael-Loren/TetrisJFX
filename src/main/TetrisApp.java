@@ -27,7 +27,13 @@ public class TetrisApp extends Application {
     private GraphicsContext g;
 
     private int[][] grid = new int[GRID_WIDTH][GRID_HEIGHT];
+<<<<<<< HEAD
   
+=======
+    /**
+     * size of the game
+     */
+>>>>>>> c909af7181bf69ac9e97c164de5dcf788382c5fe
 
     private List<Tetromino> original = new ArrayList<>();
     private List<Tetromino> tetrominos = new ArrayList<>();
@@ -43,30 +49,44 @@ public class TetrisApp extends Application {
 
         root.getChildren().addAll(canvas);
 
-//        original.add(new Tetromino(Color.BLUE,
-//                new TetrisPiece(0, Direction.DOWN),
-//                new TetrisPiece(1, Direction.LEFT),
-//                new TetrisPiece(1, Direction.RIGHT),
-//                new TetrisPiece(2, Direction.RIGHT)
-//        ));
-//        original.add(new Tetromino(Color.RED,
-//                new TetrisPiece(0, Direction.DOWN),
-//                new TetrisPiece(1, Direction.LEFT),
-//                new TetrisPiece(1, Direction.RIGHT),
-//                new TetrisPiece(1, Direction.DOWN)
-//        ));
-//
-//        original.add(new Tetromino(Color.GREEN,
-//                new TetrisPiece(0, Direction.DOWN),
-//                new TetrisPiece(1, Direction.RIGHT),
-//                new TetrisPiece(2, Direction.RIGHT),
-//                new TetrisPiece(1, Direction.DOWN)));
+
+        original.add(new Tetromino(Color.BLUE,
+                new TetrisPiece(0, Direction.DOWN),
+                new TetrisPiece(1, Direction.LEFT),
+                new TetrisPiece(1, Direction.RIGHT),
+                new TetrisPiece(2, Direction.RIGHT)
+                /**
+                 * l shaped piece
+                 */
+        ));
+        original.add(new Tetromino(Color.RED,
+                new TetrisPiece(0, Direction.DOWN),
+                new TetrisPiece(1, Direction.LEFT),
+                new TetrisPiece(1, Direction.RIGHT),
+                new TetrisPiece(1, Direction.DOWN)
+                /**
+                 * T shaped piece
+                 */
+        ));
+
+        original.add(new Tetromino(Color.GREEN,
+                new TetrisPiece(0, Direction.DOWN),
+                new TetrisPiece(1, Direction.RIGHT),
+                new TetrisPiece(2, Direction.RIGHT),
+                new TetrisPiece(1, Direction.DOWN)));
+        /**
+         * Line piece
+         */
+
 
         original.add(new Tetromino(Color.GRAY,
                 new TetrisPiece(0, Direction.DOWN),
                 new TetrisPiece(1, Direction.RIGHT),
                 new TetrisPiece(2, Direction.RIGHT, Direction.DOWN),
                 new TetrisPiece(1, Direction.DOWN)));
+        /**
+         * Square piece
+         */
 
         spawn();
 
