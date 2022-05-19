@@ -74,7 +74,7 @@ public class TetrisApp extends Application {
         original.add(new Tetromino(Color.GRAY,
                 new TetrisPiece(0, Direction.DOWN),
                 new TetrisPiece(1, Direction.RIGHT),
-                new TetrisPiece(2, Direction.RIGHT, Direction.DOWN),
+                new TetrisPiece(1, Direction.RIGHT, Direction.DOWN),
                 new TetrisPiece(1, Direction.DOWN)));
         
         //creates S piece
