@@ -48,19 +48,19 @@ public class Tetromino {
 	public void move(Direction direction) {
 		move(direction.x, direction.y);
 	}
-
-	/**
-	 * Drops piece to bottom of grid
-	 */
-	public void drop() {
-		pieces.forEach(p -> {
-			p.y += 2; 
-			//supposed to drop to bottom, not move by 2
-			//whenever a piece goes inside another, the game ends
-			//fix boundary check
-		});
-		
-	}
+//
+//	/**
+//	 * Drops piece to bottom of grid
+//	 */
+//	public void drop() {
+//		pieces.forEach(p -> {
+//			p.y += 2; 
+//			//supposed to drop to bottom, not move by 2
+//			//whenever a piece goes inside another, the game ends
+//			//fix boundary check
+//		});
+//		
+//	}
 
 	
 	/**
