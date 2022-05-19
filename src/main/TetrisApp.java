@@ -27,9 +27,7 @@ public class TetrisApp extends Application {
     private GraphicsContext g;
 
     private int[][] grid = new int[GRID_WIDTH][GRID_HEIGHT];
-    /**
-     * 
-     */
+
 
     private List<Tetromino> original = new ArrayList<>();
     private List<Tetromino> tetrominos = new ArrayList<>();
@@ -50,6 +48,7 @@ public class TetrisApp extends Application {
                 new TetrisPiece(1, Direction.LEFT),
                 new TetrisPiece(1, Direction.RIGHT),
                 new TetrisPiece(2, Direction.RIGHT)
+                
         ));
         //creates T piece
         original.add(new Tetromino(Color.PURPLE,
@@ -71,12 +70,12 @@ public class TetrisApp extends Application {
                 new TetrisPiece(1, Direction.RIGHT),
                 new TetrisPiece(2, Direction.RIGHT),
                 new TetrisPiece(1, Direction.UP)));
-        
-        //creates square piece
+                new TetrisPiece(1, Direction.DOWN)));
+      //creates square piece
         original.add(new Tetromino(Color.GRAY,
                 new TetrisPiece(0, Direction.DOWN),
                 new TetrisPiece(1, Direction.RIGHT),
-                new TetrisPiece(1, Direction.RIGHT, Direction.DOWN),
+                new TetrisPiece(2, Direction.RIGHT, Direction.DOWN),
                 new TetrisPiece(1, Direction.DOWN)));
         
         //creates S piece
@@ -92,6 +91,7 @@ public class TetrisApp extends Application {
                 new TetrisPiece(1, Direction.LEFT),
                 new TetrisPiece(1, Direction.DOWN, Direction.RIGHT),
                 new TetrisPiece(1, Direction.DOWN)));
+
 
         spawn();
 
@@ -258,9 +258,9 @@ public class TetrisApp extends Application {
         	case DOWN:
         		makeMove(p -> p.move(Direction.DOWN), p -> p.move(Direction.UP), true);
         		break;
-        	case SPACE:
-        		makeMove(p -> p.drop(), p -> p.drop(), true);
-        		break;
+//        	case SPACE:
+//        		makeMove(p -> p.drop(), p -> p.drop(), true);
+//        		break;
         	}
         	
         	 render();
