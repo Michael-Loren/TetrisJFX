@@ -44,30 +44,53 @@ public class TetrisApp extends Application {
         g = canvas.getGraphicsContext2D();
 
         root.getChildren().addAll(canvas);
-
-        original.add(new Tetromino(Color.BLUE,
+        //creates I piece
+        original.add(new Tetromino(Color.SKYBLUE,
                 new TetrisPiece(0, Direction.DOWN),
                 new TetrisPiece(1, Direction.LEFT),
                 new TetrisPiece(1, Direction.RIGHT),
                 new TetrisPiece(2, Direction.RIGHT)
         ));
-        original.add(new Tetromino(Color.RED,
+        //creates T piece
+        original.add(new Tetromino(Color.PURPLE,
                 new TetrisPiece(0, Direction.DOWN),
                 new TetrisPiece(1, Direction.LEFT),
                 new TetrisPiece(1, Direction.RIGHT),
                 new TetrisPiece(1, Direction.DOWN)
         ));
-
-        original.add(new Tetromino(Color.GREEN,
+        //creates J piece
+        original.add(new Tetromino(Color.BLUE,
+                new TetrisPiece(0, Direction.DOWN),
+                new TetrisPiece(1, Direction.LEFT),
+                new TetrisPiece(2, Direction.LEFT),
+                new TetrisPiece(1, Direction.UP)));
+        
+      //creates L piece
+        original.add(new Tetromino(Color.ORANGE,
                 new TetrisPiece(0, Direction.DOWN),
                 new TetrisPiece(1, Direction.RIGHT),
                 new TetrisPiece(2, Direction.RIGHT),
-                new TetrisPiece(1, Direction.DOWN)));
-
+                new TetrisPiece(1, Direction.UP)));
+        
+        //creates square piece
         original.add(new Tetromino(Color.GRAY,
                 new TetrisPiece(0, Direction.DOWN),
                 new TetrisPiece(1, Direction.RIGHT),
                 new TetrisPiece(1, Direction.RIGHT, Direction.DOWN),
+                new TetrisPiece(1, Direction.DOWN)));
+        
+        //creates S piece
+        original.add(new Tetromino(Color.GREEN,
+                new TetrisPiece(0, Direction.DOWN),
+                new TetrisPiece(1, Direction.RIGHT),
+                new TetrisPiece(1, Direction.DOWN, Direction.LEFT),
+                new TetrisPiece(1, Direction.DOWN)));
+        
+        //creates Z piece
+        original.add(new Tetromino(Color.RED,
+                new TetrisPiece(0, Direction.DOWN),
+                new TetrisPiece(1, Direction.LEFT),
+                new TetrisPiece(1, Direction.DOWN, Direction.RIGHT),
                 new TetrisPiece(1, Direction.DOWN)));
 
         spawn();
