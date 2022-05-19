@@ -110,11 +110,15 @@ public class TetrisApp extends Application {
 
         return root;
     }
-
+/**
+ * makes the pieces go down
+ */
     private void update() {
         makeMove(p -> p.move(Direction.DOWN), p -> p.move(Direction.UP), true);
     }
-
+/**
+ * spawns the pieces
+ */
     private void render() {
         g.clearRect(0, 0, GRID_WIDTH * TILE_SIZE, GRID_HEIGHT * TILE_SIZE);
 
@@ -124,7 +128,10 @@ public class TetrisApp extends Application {
     private void placePiece(TetrisPiece piece) {
         grid[piece.x][piece.y]++;
     }
-
+/**
+ * when line is complete, removes the completed line
+ * @param piece
+ */
     private void removePiece(TetrisPiece piece) {
         grid[piece.x][piece.y]--;
     }
@@ -133,7 +140,12 @@ public class TetrisApp extends Application {
         return piece.x < 0 || piece.x >= GRID_WIDTH
                 || piece.y < 0 || piece.y >= GRID_HEIGHT;
     }
-
+/**
+ * lets the program know the piece is still continuing to spawn
+ * @param onSuccess
+ * @param onFail
+ * @param endMove
+ */
     private void makeMove(Consumer<Tetromino> onSuccess, Consumer<Tetromino> onFail, boolean endMove) {
         selected.pieces.forEach(this::removePiece);
         
@@ -179,7 +191,9 @@ public class TetrisApp extends Application {
 
         return true;
     }
-
+/**
+ * spawns the piece
+ */
     private void sweep() {
         List<Integer> rows = sweepRows();
         rows.forEach(row -> {
@@ -206,7 +220,10 @@ public class TetrisApp extends Application {
 
         spawn();
     }
-
+/**
+ * continues with the spawn
+ * @return
+ */
     private List<Integer> sweepRows() {
         List<Integer> rows = new ArrayList<>();
 
@@ -238,7 +255,9 @@ public class TetrisApp extends Application {
             System.exit(0);
         }
     }
-
+/**
+ * controlling the directions of all the pieces
+ */
     @Override
     public void start(Stage stage) throws Exception {
         Scene scene = new Scene(createContent());
