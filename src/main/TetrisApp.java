@@ -70,7 +70,6 @@ public class TetrisApp extends Application {
                 new TetrisPiece(1, Direction.RIGHT),
                 new TetrisPiece(2, Direction.RIGHT),
                 new TetrisPiece(1, Direction.UP)));
-                new TetrisPiece(1, Direction.DOWN)));
       //creates square piece
         original.add(new Tetromino(Color.GRAY,
                 new TetrisPiece(0, Direction.DOWN),
