@@ -28,7 +28,7 @@ public class TetrisApp extends Application {
 
     private int[][] grid = new int[GRID_WIDTH][GRID_HEIGHT];
     /**
-     * 
+     * size of the game
      */
 
     private List<Tetromino> original = new ArrayList<>();
@@ -50,12 +50,18 @@ public class TetrisApp extends Application {
                 new TetrisPiece(1, Direction.LEFT),
                 new TetrisPiece(1, Direction.RIGHT),
                 new TetrisPiece(2, Direction.RIGHT)
+                /**
+                 * l shaped piece
+                 */
         ));
         original.add(new Tetromino(Color.RED,
                 new TetrisPiece(0, Direction.DOWN),
                 new TetrisPiece(1, Direction.LEFT),
                 new TetrisPiece(1, Direction.RIGHT),
                 new TetrisPiece(1, Direction.DOWN)
+                /**
+                 * T shaped piece
+                 */
         ));
 
         original.add(new Tetromino(Color.GREEN,
@@ -63,12 +69,18 @@ public class TetrisApp extends Application {
                 new TetrisPiece(1, Direction.RIGHT),
                 new TetrisPiece(2, Direction.RIGHT),
                 new TetrisPiece(1, Direction.DOWN)));
+        /**
+         * Line piece
+         */
 
         original.add(new Tetromino(Color.GRAY,
                 new TetrisPiece(0, Direction.DOWN),
                 new TetrisPiece(1, Direction.RIGHT),
                 new TetrisPiece(1, Direction.RIGHT, Direction.DOWN),
                 new TetrisPiece(1, Direction.DOWN)));
+        /**
+         * Square piece
+         */
 
         spawn();
 
