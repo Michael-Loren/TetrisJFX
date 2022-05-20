@@ -49,6 +49,9 @@ public class TetrisApp extends Application {
 
         scoreLbl = new Label("Lines cleared: " + linesCleared);
         StackPane.setAlignment(scoreLbl, Pos.TOP_CENTER);
+        scoreLbl.setTranslateY(30);
+        scoreLbl.setScaleX(3);
+        scoreLbl.setScaleY(3);
      
         
         root.getChildren().addAll(canvas, scoreLbl);
@@ -229,7 +232,7 @@ public class TetrisApp extends Application {
             });
             linesCleared++;
         });
-        scoreLbl.setText("Lines Cleared: " + linesCleared);
+        scoreLbl.setText("Lines cleared: " + linesCleared);
         spawn();
     }
 /**
