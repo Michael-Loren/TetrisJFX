@@ -256,8 +256,8 @@ public class TetrisApp extends Application {
         return rows;
     }
 
-    private synchronized void spawn() {
-        Tetromino tetromino = original.get(randomStream.nextInt(original.size())).copy();
+    private void spawn() {
+        Tetromino tetromino = original.get(randomStream.nextInt(original.size())).copy(); //this random distribution sucks
         tetromino.move(GRID_WIDTH / 2, 0);
 
         selected = tetromino;
