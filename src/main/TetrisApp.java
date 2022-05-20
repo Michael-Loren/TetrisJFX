@@ -2,13 +2,17 @@ package main;
 
 import javafx.animation.AnimationTimer;
 import javafx.application.Application;
+import javafx.geometry.Pos;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
+import javafx.scene.control.Label;
 import javafx.scene.input.KeyCode;
 import javafx.scene.layout.Pane;
+import javafx.scene.layout.StackPane;
 import javafx.scene.paint.Color;
+import javafx.scene.text.TextAlignment;
 import javafx.stage.Stage;
 
 import java.util.ArrayList;
@@ -22,7 +26,9 @@ public class TetrisApp extends Application {
     public static final int TILE_SIZE = 40;
     public static final int GRID_WIDTH = 10;
     public static final int GRID_HEIGHT = 20;
-
+    private static final Random randomStream = new Random();
+    private short linesCleared = 0;
+    private Label scoreLbl;
     private double time;
     private GraphicsContext g;
 
@@ -35,13 +41,17 @@ public class TetrisApp extends Application {
     private Tetromino selected;
 
     private Parent createContent() {
-        Pane root = new Pane();
+        StackPane root = new StackPane();
         root.setPrefSize(GRID_WIDTH * TILE_SIZE, GRID_HEIGHT * TILE_SIZE);
-
+     
         Canvas canvas = new Canvas(GRID_WIDTH * TILE_SIZE, GRID_HEIGHT * TILE_SIZE);
         g = canvas.getGraphicsContext2D();
 
-        root.getChildren().addAll(canvas);
+        scoreLbl = new Label("Lines cleared: " + linesCleared);
+        StackPane.setAlignment(scoreLbl, Pos.TOP_CENTER);
+     
+        
+        root.getChildren().addAll(canvas, scoreLbl);
         //creates I piece
         original.add(new Tetromino(Color.SKYBLUE,
                 new TetrisPiece(0, Direction.DOWN),
@@ -62,16 +72,16 @@ public class TetrisApp extends Application {
                 new TetrisPiece(0, Direction.DOWN),
                 new TetrisPiece(1, Direction.LEFT),
                 new TetrisPiece(2, Direction.LEFT),
-                new TetrisPiece(1, Direction.UP)));
+                new TetrisPiece(1, Direction.DOWN)));
         
       //creates L piece
         original.add(new Tetromino(Color.ORANGE,
                 new TetrisPiece(0, Direction.DOWN),
                 new TetrisPiece(1, Direction.RIGHT),
                 new TetrisPiece(2, Direction.RIGHT),
-                new TetrisPiece(1, Direction.UP)));
+                new TetrisPiece(1, Direction.DOWN)));
       //creates square piece
-        original.add(new Tetromino(Color.GRAY,
+        original.add(new Tetromino(Color.YELLOW,
                 new TetrisPiece(0, Direction.DOWN),
                 new TetrisPiece(1, Direction.RIGHT),
                 new TetrisPiece(1, Direction.RIGHT, Direction.DOWN),
@@ -205,7 +215,7 @@ public class TetrisApp extends Application {
                 grid[x][row]--;
             }
         });
-
+//clear line
         rows.forEach(row -> {
             tetrominos.stream().forEach(tetromino -> {
                 tetromino.pieces.stream()
@@ -215,9 +225,11 @@ public class TetrisApp extends Application {
                             piece.y++;
                             placePiece(piece);
                         });
+                
             });
+            linesCleared++;
         });
-
+        scoreLbl.setText("Lines Cleared: " + linesCleared);
         spawn();
     }
 /**
@@ -241,8 +253,8 @@ public class TetrisApp extends Application {
         return rows;
     }
 
-    private void spawn() {
-        Tetromino tetromino = original.get(new Random().nextInt(original.size())).copy();
+    private synchronized void spawn() {
+        Tetromino tetromino = original.get(randomStream.nextInt(original.size())).copy();
         tetromino.move(GRID_WIDTH / 2, 0);
 
         selected = tetromino;

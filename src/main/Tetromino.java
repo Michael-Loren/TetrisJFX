@@ -48,6 +48,12 @@ public class Tetromino {
 	public void move(Direction direction) {
 		move(direction.x, direction.y);
 	}
+	/**
+	 * Physically move the Tetromino across the board
+	 */
+	public void move(Direction direction, int times) {
+		move(direction.x + times, direction.y + times);
+	}
 //
 //	/**
 //	 * Drops piece to bottom of grid
