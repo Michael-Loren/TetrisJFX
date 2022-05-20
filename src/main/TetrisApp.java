@@ -53,7 +53,7 @@ public class TetrisApp extends Application {
         
         root.getChildren().addAll(canvas, scoreLbl);
         //creates I piece
-        original.add(new Tetromino(Color.SKYBLUE,
+        original.add(new Tetromino(Color.CYAN,
                 new TetrisPiece(0, Direction.DOWN),
                 new TetrisPiece(1, Direction.LEFT),
                 new TetrisPiece(1, Direction.RIGHT),
@@ -61,7 +61,7 @@ public class TetrisApp extends Application {
                 
         ));
         //creates T piece
-        original.add(new Tetromino(Color.PURPLE,
+        original.add(new Tetromino(Color.FUCHSIA,
                 new TetrisPiece(0, Direction.DOWN),
                 new TetrisPiece(1, Direction.LEFT),
                 new TetrisPiece(1, Direction.RIGHT),
@@ -88,7 +88,7 @@ public class TetrisApp extends Application {
                 new TetrisPiece(1, Direction.DOWN)));
         
         //creates S piece
-        original.add(new Tetromino(Color.GREEN,
+        original.add(new Tetromino(Color.LIME,
                 new TetrisPiece(0, Direction.DOWN),
                 new TetrisPiece(1, Direction.RIGHT),
                 new TetrisPiece(1, Direction.DOWN, Direction.LEFT),
